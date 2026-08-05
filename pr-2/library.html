@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library</title>
+</head>
+<body>
+
+    <table width="100%" border="0" cellpadding="5">
+        <tr>
+            <td width="10%" align="center">
+                <img src="images/logo.svg" alt="Logo" width="80" height="80">
+            </td>
+            <td align="center">
+                <h1>THE BACKBENCHERS UNIVERSITY</h1>
+                <h3>Student Portal</h3>
+            </td>
+        </tr>
+    </table>
+    
+    <hr>
+
+    <table width="100%" border="1" cellpadding="10" cellspacing="0" align="center">
+        <tr align="center" bgcolor="#e0e0e0">
+            <td><a href="index.html"><b>Home</b></a></td>
+            <td><a href="profile.html"><b>Profile</b></a></td>
+            <td><a href="attendance.html"><b>Attendance</b></a></td>
+            <td><a href="academics.html"><b>Academics</b></a></td>
+            <td><a href="timetable.html"><b>Timetable</b></a></td>
+            <td><a href="assignments.html"><b>Assignments</b></a></td>
+            <td><a href="fees.html"><b>Fees</b></a></td>
+            <td><a href="library.html"><b>Library</b></a></td>
+            <td><a href="placements.html"><b>Placements</b></a></td>
+            <td><a href="settings.html"><b>Settings</b></a></td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <fieldset>
+        <legend><h2>Search Book</h2></legend>
+        <form action="#" method="get">
+            <table border="0" cellpadding="5">
+                <tr>
+                    <td><label for="book-search"><b>Enter Book Title / Author:</b></label></td>
+                    <td><input type="text" id="book-search" size="30" placeholder="e.g. Data Structures..."></td>
+                    <td><button type="button">Search</button></td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend><h3>Issued Books</h3></legend>
+        <table width="100%" border="1" cellpadding="8" cellspacing="0">
+            <tr bgcolor="#e0e0e0">
+                <th>Acc No</th>
+                <th>Book Title</th>
+                <th>Author</th>
+                <th>Issue Date</th>
+                <th>Due Date</th>
+                <th>Fine</th>
+                <th>Renew</th>
+            </tr>
+            <tr>
+                <td>LIB-CS-2041</td>
+                <td>Data Structures Using C</td>
+                <td>Y. Langsam</td>
+                <td>18 Jul 2026</td>
+                <td>08 Aug 2026</td>
+                <td>₹0</td>
+                <td><button type="button">Renew</button></td>
+            </tr>
+            <tr bgcolor="#f9f9f9">
+                <td>LIB-CS-1892</td>
+                <td>Database System Concepts</td>
+                <td>Korth</td>
+                <td>20 Jul 2026</td>
+                <td>10 Aug 2026</td>
+                <td>₹0</td>
+                <td><button type="button">Renew</button></td>
+            </tr>
+            <tr>
+                <td>LIB-CS-1033</td>
+                <td>Operating Systems</td>
+                <td>Tanenbaum</td>
+                <td>02 Jul 2026</td>
+                <td>23 Jul 2026</td>
+                <td><font color="red">₹20</font></td>
+                <td><button type="button" disabled>Pay Fine</button></td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend><h3>Borrow History</h3></legend>
+        <table width="100%" border="1" cellpadding="8" cellspacing="0">
+            <tr bgcolor="#e0e0e0">
+                <th>Book Title</th>
+                <th>Author</th>
+                <th>Issue Date</th>
+                <th>Return Date</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>Software Engineering</td>
+                <td>Pressman</td>
+                <td>10 Jan 2026</td>
+                <td>24 Jan 2026</td>
+                <td><font color="green">Returned</font></td>
+            </tr>
+            <tr bgcolor="#f9f9f9">
+                <td>Computer Networks</td>
+                <td>Tanenbaum</td>
+                <td>05 Feb 2026</td>
+                <td>19 Feb 2026</td>
+                <td><font color="green">Returned</font></td>
+            </tr>
+            <tr>
+                <td>OOP with C++</td>
+                <td>E. Balagurusamy</td>
+                <td>01 Mar 2026</td>
+                <td>15 Mar 2026</td>
+                <td><font color="green">Returned</font></td>
+            </tr>
+        </table>
+    </fieldset>
+
+</body>
+</html>
