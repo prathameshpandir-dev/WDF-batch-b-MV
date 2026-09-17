@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Authentication Gateway - The Backbenchers University</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-body-wrapper">
+
+    <!-- Minimal Secure Header -->
+    <header class="login-header">
+        <div class="d-flex align-center gap-sm">
+            <img src="images/logo.svg" alt="University Crest" style="width: 42px; height: 42px;">
+            <div>
+                <h1 style="font-size: 1.15rem; color: #ffffff; margin: 0; letter-spacing: 0.5px;">THE BACKBENCHERS UNIVERSITY</h1>
+                <p style="font-size: 0.75rem; color: var(--accent-light); margin: 0; font-weight: 600;">Autonomous Engineering Institute | Single Sign-On (SSO)</p>
+            </div>
+        </div>
+        <div class="d-flex align-center gap-sm">
+            <button class="theme-toggle-btn" aria-label="Toggle Dark/Light theme">
+                🌙 <span>Dark</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Authentication Gateway -->
+    <main class="login-main">
+        <div class="login-card-container">
+
+            <!-- Login Form Panel -->
+            <div class="login-form-side">
+                <div style="text-align: center; margin-bottom: var(--space-xl);">
+                    <img src="images/logo.svg" alt="University Crest" style="width: 52px; height: 52px; margin-bottom: var(--space-xs);">
+                    <h2 style="font-size: var(--font-xl); margin-bottom: 4px; font-weight: 700;">Sign In to Student Portal</h2>
+                    <p style="font-size: var(--font-sm); color: var(--text-muted); margin: 0;">Enter your institutional credentials to unlock access</p>
+                </div>
+
+                <form id="login-form">
+
+                    <!-- Role Selector -->
+                    <div class="form-group">
+                        <label for="login-role">Account Category</label>
+                        <select id="login-role" class="form-control">
+                            <option value="student" selected>🎓 Student Account</option>
+                            <option value="faculty">👨‍🏫 Faculty / Academic Mentor</option>
+                            <option value="admin">🏢 Examination / Admin Officer</option>
+                        </select>
+                    </div>
+
+                    <!-- PRN / Roll Input -->
+                    <div class="form-group">
+                        <label for="login-username">Roll Number / PRN / University Email <span class="required" style="color: var(--danger);">*</span></label>
+                        <input type="text" id="login-username" class="form-control" placeholder="Enter Roll No. / PRN / Email" value="SYCS104" required autocomplete="username">
+                    </div>
+
+                    <!-- Password Input with Show/Hide Toggle -->
+                    <div class="form-group">
+                        <div class="d-flex justify-between align-center">
+                            <label for="login-password">Password <span class="required" style="color: var(--danger);">*</span></label>
+                            <a href="javascript:void(0)" id="forgot-password-link" style="font-size: var(--font-xs); color: var(--secondary);">Forgot Password?</a>
+                        </div>
+                        <div style="position: relative; display: flex; align-items: center;">
+                            <input type="password" id="login-password" class="form-control" placeholder="Enter your password" value="password123" required autocomplete="current-password" style="padding-right: 46px;">
+                            <button type="button" id="toggle-password-visibility" aria-label="Toggle password visibility" style="position: absolute; right: 8px; background: transparent; border: none; font-size: 18px; cursor: pointer; color: var(--text-muted); padding: 4px 6px;">
+                                👁️
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Remember Me -->
+                    <div class="form-check" style="margin: var(--space-md) 0;">
+                        <input type="checkbox" id="login-remember" checked>
+                        <label for="login-remember" class="form-check-label">Remember my login session on this browser</label>
+                    </div>
+
+                    <!-- Sign In Action Button -->
+                    <div style="margin-top: var(--space-md);">
+                        <button type="submit" class="btn btn-accent btn-block btn-lg" id="login-submit-btn" style="font-size: var(--font-base);">
+                            Sign In & Unlock Portal &raquo;
+                        </button>
+                    </div>
+
+                    <!-- Registration Redirection Link -->
+                    <div style="text-align: center; margin-top: var(--space-lg); padding-top: var(--space-md); border-top: 1px solid var(--border-color); font-size: var(--font-sm);">
+                        Don't have an institutional account? <br>
+                        <a href="registration.html" id="go-to-register-link" style="color: var(--secondary-light); font-weight: 700; text-decoration: underline; display: inline-block; margin-top: 4px;">
+                            Register / Create New Account &raquo;
+                        </a>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Minimal University Footer -->
+    <footer style="margin-top: auto; padding: var(--space-md) 0; border-top: 1px solid rgba(255, 255, 255, 0.1); background-color: rgba(0, 0, 0, 0.3);">
+        <div class="container" style="text-align: center; font-size: var(--font-xs); color: #94a3b8;">
+            <p>&copy; 2026 The Backbenchers University. Authorized Student & Faculty Access Only.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

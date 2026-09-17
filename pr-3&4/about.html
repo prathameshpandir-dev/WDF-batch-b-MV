@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - The Backbenchers University</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container header-inner">
+            <a href="index.html" class="header-brand">
+                <img src="images/logo.svg" alt="University Logo" class="header-logo">
+                <div class="header-title">
+                    <h1>THE BACKBENCHERS UNIVERSITY</h1>
+                    <p>Accredited NAAC A++ | Autonomous Engineering Institute</p>
+                </div>
+            </a>
+            <div class="header-quick-info">
+                <span class="badge-tag">Academic Year 2025-26</span>
+                <span class="badge-tag">Helpline: +91 20 2765 4321</span>
+                <button class="theme-toggle-btn" aria-label="Toggle Dark/Light theme">
+                    🌙 <span>Dark</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container nav-container">
+            <div class="nav-brand-label">
+                <span>Navigation Menu</span>
+            </div>
+            <button class="nav-toggle-btn" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li class="nav-dropdown">
+                        <button class="nav-dropdown-btn">Student Portal ▾</button>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="profile.html">Student Profile</a></li>
+                            <li><a href="attendance.html">Attendance</a></li>
+                            <li><a href="academics.html">Academics & Grades</a></li>
+                            <li><a href="timetable.html">Class Timetable</a></li>
+                            <li><a href="assignments.html">Assignments</a></li>
+                            <li><a href="fees.html">Fee Payment</a></li>
+                            <li><a href="library.html">Digital Library</a></li>
+                            <li><a href="placements.html">Placements</a></li>
+                            <li><a href="settings.html">Account Settings</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container" style="margin-top: var(--space-lg); margin-bottom: var(--space-xl);">
+
+        <!-- Page Introduction Card -->
+        <div class="card">
+            <div class="card-header">
+                <h2>🏛️ About The Backbenchers University</h2>
+                <span class="badge badge-success">Established 1998</span>
+            </div>
+            <div class="card-body">
+                <p style="font-size: var(--font-base); line-height: 1.7; margin-bottom: var(--space-md);">
+                    Founded in 1998, <b>The Backbenchers University (BBU)</b> is recognized as one of Maharashtra's premier autonomous engineering institutions. With an emphasis on practical problem solving, industry collaboration, and open-source contributions, BBU transforms inquisitive learners into global technology innovators.
+                </p>
+                <div class="grid-3" style="margin-top: var(--space-md);">
+                    <div style="background-color: var(--bg-alt); padding: var(--space-md); border-radius: var(--radius-sm); border-left: 3px solid var(--secondary);">
+                        <h4 style="color: var(--secondary-dark); margin-bottom: 4px;">Vision</h4>
+                        <p style="font-size: var(--font-xs); margin: 0;">To be a globally recognized center of excellence in engineering education, pioneering impactful research and nurturing ethical engineers.</p>
+                    </div>
+                    <div style="background-color: var(--bg-alt); padding: var(--space-md); border-radius: var(--radius-sm); border-left: 3px solid var(--accent);">
+                        <h4 style="color: var(--accent); margin-bottom: 4px;">Mission</h4>
+                        <p style="font-size: var(--font-xs); margin: 0;">To deliver rigorous, project-oriented computing curricula, state-of-the-art laboratory infrastructure, and robust industry-academia linkages.</p>
+                    </div>
+                    <div style="background-color: var(--bg-alt); padding: var(--space-md); border-radius: var(--radius-sm); border-left: 3px solid var(--success);">
+                        <h4 style="color: var(--success); margin-bottom: 4px;">Core Values</h4>
+                        <p style="font-size: var(--font-xs); margin: 0;">Integrity, critical inquiry, teamwork, environmental sustainability, and dedication to societal upliftment through technology.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Accreditations & Recognitions (CSS Grid 4-Column) -->
+        <div class="card">
+            <div class="card-header">
+                <h2>🏆 Institutional Accreditations & Honors</h2>
+            </div>
+            <div class="card-body">
+                <div class="grid-4" style="text-align: center;">
+                    <div style="padding: var(--space-md); border: 1px solid var(--border-color); border-radius: var(--radius-md);">
+                        <h3 style="color: var(--accent); font-size: var(--font-xl); margin-bottom: 4px;">A++</h3>
+                        <b>NAAC Grade</b>
+                        <p style="font-size: var(--font-xs); color: var(--text-muted); margin-top: 4px;">Highest accreditation score of 3.78 / 4.0</p>
+                    </div>
+                    <div style="padding: var(--space-md); border: 1px solid var(--border-color); border-radius: var(--radius-md);">
+                        <h3 style="color: var(--secondary); font-size: var(--font-xl); margin-bottom: 4px;">Tier 1</h3>
+                        <b>NBA Accredited</b>
+                        <p style="font-size: var(--font-xs); color: var(--text-muted); margin-top: 4px;">All undergraduate engineering programs certified</p>
+                    </div>
+                    <div style="padding: var(--space-md); border: 1px solid var(--border-color); border-radius: var(--radius-md);">
+                        <h3 style="color: var(--success); font-size: var(--font-xl); margin-bottom: 4px;">Rank #34</h3>
+                        <b>NIRF India 2025</b>
+                        <p style="font-size: var(--font-xs); color: var(--text-muted); margin-top: 4px;">Among top autonomous colleges in India</p>
+                    </div>
+                    <div style="padding: var(--space-md); border: 1px solid var(--border-color); border-radius: var(--radius-md);">
+                        <h3 style="color: var(--primary); font-size: var(--font-xl); margin-bottom: 4px;">100%</h3>
+                        <b>Autonomous</b>
+                        <p style="font-size: var(--font-xs); color: var(--text-muted); margin-top: 4px;">UGC Autonomous Status with SPPU affiliation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Department Leadership & Faculty Directory (CSS Grid 3-Column) -->
+        <div class="card">
+            <div class="card-header">
+                <h2>👨‍🏫 Academic Leadership & Faculty Directory</h2>
+                <span class="badge badge-info">Computer Engineering</span>
+            </div>
+            <div class="card-body">
+                <div class="faculty-grid">
+                    <!-- Faculty Card 1 -->
+                    <div class="card" style="border: 1px solid var(--border-color); margin-bottom: 0;">
+                        <div class="d-flex align-center gap-md" style="margin-bottom: var(--space-sm);">
+                            <div style="width: 60px; height: 60px; border-radius: var(--radius-full); background-color: var(--bg-alt); display: flex; align-items: center; justify-content: center; flex-shrink: 0; border: 2px solid var(--accent);">
+                                <img src="images/student.svg" alt="Dr. A. Verma" style="width: 44px; height: 44px;">
+                            </div>
+                            <div>
+                                <h3 style="font-size: var(--font-md); margin-bottom: 2px;">Dr. Amit K. Verma</h3>
+                                <span class="badge badge-primary" style="background-color: var(--primary); color: white;">Principal & Professor</span>
+                            </div>
+                        </div>
+                        <p style="font-size: var(--font-xs); color: var(--text-secondary); margin-bottom: 6px;"><b>Qualification:</b> Ph.D. in Computer Science (IIT Bombay)</p>
+                        <p style="font-size: var(--font-xs); color: var(--text-secondary); margin-bottom: 6px;"><b>Specialization:</b> Cloud Systems, Distributed Databases</p>
+                        <p style="font-size: var(--font-xs); color: var(--text-muted);"><b>Email:</b> principal@backbenchers.edu.in</p>
+                    </div>
+
+                    <!-- Faculty Card 2 -->
+                    <div class="card" style="border: 1px solid var(--border-color); margin-bottom: 0;">
+                        <div class="d-flex align-center gap-md" style="margin-bottom: var(--space-sm);">
+                            <div style="width: 60px; height: 60px; border-radius: var(--radius-full); background-color: var(--bg-alt); display: flex; align-items: center; justify-content: center; flex-shrink: 0; border: 2px solid var(--secondary);">
+                                <img src="images/student.svg" alt="Dr. S. Kulkarni" style="width: 44px; height: 44px;">
+                            </div>
+                            <div>
+                                <h3 style="font-size: var(--font-md); margin-bottom: 2px;">Dr. Sneha Kulkarni</h3>
+                                <span class="badge badge-info">HOD - Computer Engineering</span>
+                            </div>
+                        </div>
+                        <p style="font-size: var(--font-xs); color: var(--text-secondary); margin-bottom: 6px;"><b>Qualification:</b> Ph.D. (VNIT Nagpur), M.Tech</p>
+                        <p style="font-size: var(--font-xs); color: var(--text-secondary); margin-bottom: 6px;"><b>Specialization:</b> AI/ML, Natural Language Processing</p>
+                        <p style="font-size: var(--font-xs); color: var(--text-muted);"><b>Email:</b> hod.comp@backbenchers.edu.in</p>
+                    </div>
+
+                    <!-- Faculty Card 3 -->
+                    <div class="card" style="border: 1px solid var(--border-color); margin-bottom: 0;">
+                        <div class="d-flex align-center gap-md" style="margin-bottom: var(--space-sm);">
+                            <div style="width: 60px; height: 60px; border-radius: var(--radius-full); background-color: var(--bg-alt); display: flex; align-items: center; justify-content: center; flex-shrink: 0; border: 2px solid var(--success);">
+                                <img src="images/student.svg" alt="Prof. R. Joshi" style="width: 44px; height: 44px;">
+                            </div>
+                            <div>
+                                <h3 style="font-size: var(--font-md); margin-bottom: 2px;">Prof. Rajesh Joshi</h3>
+                                <span class="badge badge-success">Associate Professor</span>
+                            </div>
+                        </div>
+                        <p style="font-size: var(--font-xs); color: var(--text-secondary); margin-bottom: 6px;"><b>Qualification:</b> M.E. (SPPU Pune), Ph.D. (Pursuing)</p>
+                        <p style="font-size: var(--font-xs); color: var(--text-secondary); margin-bottom: 6px;"><b>Specialization:</b> Web Technologies, Cyber Security</p>
+                        <p style="font-size: var(--font-xs); color: var(--text-muted);"><b>Email:</b> r.joshi@backbenchers.edu.in</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Research Laboratories & Centers (CSS Grid 2-Column) -->
+        <div class="card" id="labs">
+            <div class="card-header">
+                <h2>🔬 Specialized Engineering Laboratories</h2>
+            </div>
+            <div class="card-body">
+                <div class="grid-2">
+                    <div style="background: var(--bg-alt); padding: var(--space-md); border-radius: var(--radius-sm);">
+                        <h4>1. High Performance Cloud & GPU Computing Lab</h4>
+                        <p style="font-size: var(--font-xs); color: var(--text-secondary); margin-top: 4px;">
+                            Equipped with 4x NVIDIA A100 GPU servers for training deep learning models, rendering complex simulations, and academic research in LLMs.
+                        </p>
+                    </div>
+                    <div style="background: var(--bg-alt); padding: var(--space-md); border-radius: var(--radius-sm);">
+                        <h4>2. IoT & Embedded Robotics Testbed</h4>
+                        <p style="font-size: var(--font-xs); color: var(--text-secondary); margin-top: 4px;">
+                            Features Raspberry Pi 5 clusters, ESP32 boards, LoRaWAN gateways, 3D printers, and digital oscilloscopes for hardware interfacing projects.
+                        </p>
+                    </div>
+                    <div style="background: var(--bg-alt); padding: var(--space-md); border-radius: var(--radius-sm);">
+                        <h4>3. Cyber Security & Digital Forensics Lab</h4>
+                        <p style="font-size: var(--font-xs); color: var(--text-secondary); margin-top: 4px;">
+                            Air-gapped sandboxes for malware analysis, penetration testing simulations, cryptography research, and ethical hacking competitions.
+                        </p>
+                    </div>
+                    <div style="background: var(--bg-alt); padding: var(--space-md); border-radius: var(--radius-sm);">
+                        <h4>4. Software Engineering & Full-Stack Studio</h4>
+                        <p style="font-size: var(--font-xs); color: var(--text-secondary); margin-top: 4px;">
+                            Collaborative scrum spaces with dual monitors, CI/CD automated test runners, Docker containerization nodes, and code review displays.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- University Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4>The Backbenchers University</h4>
+                <p>An autonomous premier technical institute dedicated to engineering excellence, cutting-edge innovation, and holistic student development.</p>
+                <p style="margin-top: var(--space-xs); font-size: var(--font-xs); color: var(--accent-light);">NAAC 'A++' Grade | Approved by AICTE, New Delhi</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Institution</a></li>
+                    <li><a href="login.html">Student / Staff Login</a></li>
+                    <li><a href="events.html">Campus Events</a></li>
+                    <li><a href="placements.html">Placement Records</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Student Portal</h4>
+                <ul class="footer-links">
+                    <li><a href="dashboard.html">Student Dashboard</a></li>
+                    <li><a href="attendance.html">Attendance Tracker</a></li>
+                    <li><a href="academics.html">Academic Records</a></li>
+                    <li><a href="fees.html">Fee Portal</a></li>
+                    <li><a href="contact.html">Support & Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Campus Address</h4>
+                <p>Knowledge City, Tech Valley Campus<br>Pune - 411048, Maharashtra, India</p>
+                <p style="margin-top: 6px;"><b>Email:</b> info@backbenchers.edu.in<br><b>Helpline:</b> +91 20 2765 4321</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 The Backbenchers University. Designed for Practical 3 - Responsive UI Design (Pure CSS Grid & Flexbox).</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

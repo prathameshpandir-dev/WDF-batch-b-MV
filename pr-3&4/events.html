@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Events & Hackathons - The Backbenchers University</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container header-inner">
+            <a href="index.html" class="header-brand">
+                <img src="images/logo.svg" alt="University Logo" class="header-logo">
+                <div class="header-title">
+                    <h1>THE BACKBENCHERS UNIVERSITY</h1>
+                    <p>Accredited NAAC A++ | Autonomous Engineering Institute</p>
+                </div>
+            </a>
+            <div class="header-quick-info">
+                <span class="badge-tag">Academic Year 2025-26</span>
+                <span class="badge-tag">Student Activities Cell</span>
+                <button class="theme-toggle-btn" aria-label="Toggle Dark/Light theme">
+                    🌙 <span>Dark</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container nav-container">
+            <div class="nav-brand-label">
+                <span>Navigation Menu</span>
+            </div>
+            <button class="nav-toggle-btn" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="events.html" class="active">Events</a></li>
+                    <li class="nav-dropdown">
+                        <button class="nav-dropdown-btn">Student Portal ▾</button>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="profile.html">Student Profile</a></li>
+                            <li><a href="attendance.html">Attendance</a></li>
+                            <li><a href="academics.html">Academics & Grades</a></li>
+                            <li><a href="timetable.html">Class Timetable</a></li>
+                            <li><a href="assignments.html">Assignments</a></li>
+                            <li><a href="fees.html">Fee Payment</a></li>
+                            <li><a href="library.html">Digital Library</a></li>
+                            <li><a href="placements.html">Placements</a></li>
+                            <li><a href="settings.html">Account Settings</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <main class="container" style="margin-top: var(--space-lg); margin-bottom: var(--space-xl);">
+
+        <!-- Featured Event Hero Card (Pure Flexbox) -->
+        <div class="card" style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); color: var(--text-inverse); border: none;">
+            <div class="d-flex flex-col gap-md">
+                <div class="d-flex flex-wrap justify-between align-center gap-sm">
+                    <span class="badge badge-warning" style="font-size: var(--font-xs); padding: 6px 12px;">🌟 FLAGSHIP ANNUAL HACKATHON</span>
+                    <span style="font-size: var(--font-xs); color: var(--accent-light); font-weight: 600;">Cash Prizes Worth ₹2,50,000</span>
+                </div>
+                <div>
+                    <h2 style="color: var(--text-inverse); font-size: var(--font-2xl); margin-bottom: 8px;">CodeFest 2026: 24-Hour National Hackathon</h2>
+                    <p style="color: #cbd5e1; font-size: var(--font-sm); max-width: 780px;">
+                        Build innovative solutions in Generative AI, Web3, FinTech, and Green Computing. 50+ shortlisted teams will compete live on campus with mentors from Google, Microsoft, and NVIDIA.
+                    </p>
+                </div>
+                <div class="d-flex flex-wrap align-center justify-between gap-md" style="border-top: 1px solid rgba(255, 255, 255, 0.15); padding-top: var(--space-md);">
+                    <div class="d-flex flex-wrap gap-md" style="font-size: var(--font-xs); color: #cbd5e1;">
+                        <span>📅 <b>Date:</b> August 15 - 16, 2026</span>
+                        <span>📍 <b>Venue:</b> Central Innovation Auditorium</span>
+                        <span>👥 <b>Team Size:</b> 2 - 4 Members</span>
+                    </div>
+                    <button class="btn btn-accent btn-lg" data-modal-target="event-modal" data-event-title="CodeFest 2026: 24-Hour National Hackathon">
+                        Register Team Now &raquo;
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filter Bar (Pure Flexbox + JS Category Toggling) -->
+        <div class="filter-bar">
+            <button class="filter-btn active" data-category="all">All Events (6)</button>
+            <button class="filter-btn" data-category="technical">Technical</button>
+            <button class="filter-btn" data-category="cultural">Cultural</button>
+            <button class="filter-btn" data-category="sports">Sports</button>
+            <button class="filter-btn" data-category="workshops">Workshops</button>
+        </div>
+
+        <!-- Events Grid (Pure CSS Grid: 1 col Mobile, 2 col Tablet, 3 col Desktop) -->
+        <div class="events-grid">
+
+            <!-- Event Card 1 -->
+            <div class="event-card" data-category="technical">
+                <div class="event-image-wrap">
+                    <span class="event-date-badge">15 AUG</span>
+                    <span class="event-category-badge">Technical</span>
+                    <h3 style="color: var(--text-inverse); font-size: var(--font-lg); margin-top: 10px;">CodeFest 2026</h3>
+                    <p style="font-size: var(--font-xs); color: #cbd5e1;">24-Hr National Hackathon</p>
+                </div>
+                <div class="event-card-body">
+                    <div class="event-meta">
+                        <span>📍 Central Tech Auditorium</span>
+                        <span>⏰ 09:00 AM onwards</span>
+                    </div>
+                    <p>Annual software hackathon solving real-world challenges in AI/ML, Cloud Systems, and Decentralized Applications.</p>
+                    <button class="btn btn-primary btn-block btn-sm" data-modal-target="event-modal" data-event-title="CodeFest 2026">
+                        Register Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Event Card 2 -->
+            <div class="event-card" data-category="workshops">
+                <div class="event-image-wrap" style="background: linear-gradient(135deg, #16324f 0%, #0369a1 100%);">
+                    <span class="event-date-badge">22 AUG</span>
+                    <span class="event-category-badge">Workshops</span>
+                    <h3 style="color: var(--text-inverse); font-size: var(--font-lg); margin-top: 10px;">Cloud & DevOps</h3>
+                    <p style="font-size: var(--font-xs); color: #cbd5e1;">Hands-on Industry Workshop</p>
+                </div>
+                <div class="event-card-body">
+                    <div class="event-meta">
+                        <span>📍 Lab 02, Computing Center</span>
+                        <span>⏰ 10:00 AM - 04:00 PM</span>
+                    </div>
+                    <p>Learn Docker containerization, Kubernetes cluster orchestration, and automated CI/CD deployment pipelines.</p>
+                    <button class="btn btn-primary btn-block btn-sm" data-modal-target="event-modal" data-event-title="Cloud & DevOps Workshop">
+                        Register Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Event Card 3 -->
+            <div class="event-card" data-category="cultural">
+                <div class="event-image-wrap" style="background: linear-gradient(135deg, #7c2d12 0%, #d97706 100%);">
+                    <span class="event-date-badge">05 SEP</span>
+                    <span class="event-category-badge">Cultural</span>
+                    <h3 style="color: var(--text-inverse); font-size: var(--font-lg); margin-top: 10px;">Tarang 2026</h3>
+                    <p style="font-size: var(--font-xs); color: #cbd5e1;">Annual Inter-College Fest</p>
+                </div>
+                <div class="event-card-body">
+                    <div class="event-meta">
+                        <span>📍 University Open Air Amphitheatre</span>
+                        <span>⏰ 04:00 PM - 10:00 PM</span>
+                    </div>
+                    <p>A 3-day cultural extravaganza featuring battle of the bands, classical dances, drama theatre, and celebrity night.</p>
+                    <button class="btn btn-primary btn-block btn-sm" data-modal-target="event-modal" data-event-title="Tarang 2026 Cultural Fest">
+                        Register Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Event Card 4 -->
+            <div class="event-card" data-category="sports">
+                <div class="event-image-wrap" style="background: linear-gradient(135deg, #14532d 0%, #16a34a 100%);">
+                    <span class="event-date-badge">18 SEP</span>
+                    <span class="event-category-badge">Sports</span>
+                    <h3 style="color: var(--text-inverse); font-size: var(--font-lg); margin-top: 10px;">Inter-Collegiate Cricket</h3>
+                    <p style="font-size: var(--font-xs); color: #cbd5e1;">T20 Championship Trophy</p>
+                </div>
+                <div class="event-card-body">
+                    <div class="event-meta">
+                        <span>📍 University Sports Ground</span>
+                        <span>⏰ 08:30 AM onwards</span>
+                    </div>
+                    <p>16 engineering institutions clash in a 5-day knockout T20 cricket tournament for the prestigious Chancellor's Cup.</p>
+                    <button class="btn btn-primary btn-block btn-sm" data-modal-target="event-modal" data-event-title="Inter-Collegiate Cricket Trophy">
+                        Register Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Event Card 5 -->
+            <div class="event-card" data-category="technical">
+                <div class="event-image-wrap" style="background: linear-gradient(135deg, #312e81 0%, #4338ca 100%);">
+                    <span class="event-date-badge">26 SEP</span>
+                    <span class="event-category-badge">Technical</span>
+                    <h3 style="color: var(--text-inverse); font-size: var(--font-lg); margin-top: 10px;">RoboWars 2026</h3>
+                    <p style="font-size: var(--font-xs); color: #cbd5e1;">Combat Robotics Arena</p>
+                </div>
+                <div class="event-card-body">
+                    <div class="event-meta">
+                        <span>📍 Indoor Sports Arena</span>
+                        <span>⏰ 11:00 AM - 06:00 PM</span>
+                    </div>
+                    <p>Custom wired and wireless combat bots clash in 15kg and 30kg deathmatch categories inside a fortified safety arena.</p>
+                    <button class="btn btn-primary btn-block btn-sm" data-modal-target="event-modal" data-event-title="RoboWars 2026">
+                        Register Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Event Card 6 -->
+            <div class="event-card" data-category="workshops">
+                <div class="event-image-wrap" style="background: linear-gradient(135deg, #064e3b 0%, #0d9488 100%);">
+                    <span class="event-date-badge">08 OCT</span>
+                    <span class="event-category-badge">Workshops</span>
+                    <h3 style="color: var(--text-inverse); font-size: var(--font-lg); margin-top: 10px;">Generative AI Summit</h3>
+                    <p style="font-size: var(--font-xs); color: #cbd5e1;">LLM Fine-tuning & RAG</p>
+                </div>
+                <div class="event-card-body">
+                    <div class="event-meta">
+                        <span>📍 High Performance GPU Lab</span>
+                        <span>⏰ 09:30 AM - 05:00 PM</span>
+                    </div>
+                    <p>Hands-on session on prompting techniques, Retrieval-Augmented Generation (RAG), vector embeddings, and LangChain.</p>
+                    <button class="btn btn-primary btn-block btn-sm" data-modal-target="event-modal" data-event-title="Generative AI Summit">
+                        Register Now
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Reusable Event Registration Modal Component (Pure CSS/JS) -->
+    <div class="modal-overlay" id="event-modal">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3>🎟️ Event Registration</h3>
+                <button class="modal-close-btn" aria-label="Close dialog">&times;</button>
+            </div>
+            <form id="event-modal-form">
+                <div class="modal-body">
+                    <p style="margin-bottom: var(--space-sm);">You are registering for: <b class="modal-dynamic-title" style="color: var(--secondary);">Selected Event</b></p>
+                    
+                    <div class="form-group">
+                        <label for="modal-student-name">Full Name <span class="required" style="color: var(--danger);">*</span></label>
+                        <input type="text" id="modal-student-name" class="form-control" value="Rahul Ramesh Sharma" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="modal-roll">Student Roll Number / PRN <span class="required" style="color: var(--danger);">*</span></label>
+                        <input type="text" id="modal-roll" class="form-control" value="SYCS104" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="modal-email">Email Address (for e-Pass) <span class="required" style="color: var(--danger);">*</span></label>
+                        <input type="email" id="modal-email" class="form-control" value="rahul.sharma@backbenchers.edu.in" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="modal-team">Team Name (if participating as team)</label>
+                        <input type="text" id="modal-team" class="form-control" placeholder="e.g. ByteBackbenchers">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline" data-modal-close>Cancel</button>
+                    <button type="submit" class="btn btn-accent">Confirm Registration</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- University Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4>The Backbenchers University</h4>
+                <p>An autonomous premier technical institute dedicated to engineering excellence, cutting-edge innovation, and holistic student development.</p>
+                <p style="margin-top: var(--space-xs); font-size: var(--font-xs); color: var(--accent-light);">NAAC 'A++' Grade | Approved by AICTE, New Delhi</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Institution</a></li>
+                    <li><a href="login.html">Student / Staff Login</a></li>
+                    <li><a href="events.html">Campus Events</a></li>
+                    <li><a href="placements.html">Placement Records</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Student Portal</h4>
+                <ul class="footer-links">
+                    <li><a href="dashboard.html">Student Dashboard</a></li>
+                    <li><a href="attendance.html">Attendance Tracker</a></li>
+                    <li><a href="academics.html">Academic Records</a></li>
+                    <li><a href="fees.html">Fee Portal</a></li>
+                    <li><a href="contact.html">Support & Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Campus Address</h4>
+                <p>Knowledge City, Tech Valley Campus<br>Pune - 411048, Maharashtra, India</p>
+                <p style="margin-top: 6px;"><b>Email:</b> info@backbenchers.edu.in<br><b>Helpline:</b> +91 20 2765 4321</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 The Backbenchers University. Designed for Practical 3 - Responsive UI Design (Pure CSS Grid & Flexbox).</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

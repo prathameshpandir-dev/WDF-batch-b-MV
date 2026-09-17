@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments - The Backbenchers University</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container header-inner">
+            <a href="index.html" class="header-brand">
+                <img src="images/logo.svg" alt="University Logo" class="header-logo">
+                <div class="header-title">
+                    <h1>THE BACKBENCHERS UNIVERSITY</h1>
+                    <p>Accredited NAAC A++ | Autonomous Engineering Institute</p>
+                </div>
+            </a>
+            <div class="header-quick-info">
+                <span class="badge-tag">Academic Year 2025-26</span>
+                <span class="badge-tag">Student ID: SYCS104</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container nav-container">
+            <div class="nav-brand-label">
+                <span>Navigation Menu</span>
+            </div>
+            <button class="nav-toggle-btn" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li class="nav-dropdown">
+                        <button class="nav-dropdown-btn">Student Portal ▾</button>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="profile.html">Student Profile</a></li>
+                            <li><a href="attendance.html">Attendance</a></li>
+                            <li><a href="academics.html">Academics & Grades</a></li>
+                            <li><a href="timetable.html">Class Timetable</a></li>
+                            <li><a href="assignments.html" class="active">Assignments</a></li>
+                            <li><a href="fees.html">Fee Payment</a></li>
+                            <li><a href="library.html">Digital Library</a></li>
+                            <li><a href="placements.html">Placements</a></li>
+                            <li><a href="settings.html">Account Settings</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <main class="container" style="margin-top: var(--space-lg); margin-bottom: var(--space-xl);">
+
+        <!-- Upload Form Card (Grid & Flexbox Powered - Zero HTML Tables) -->
+        <div class="card">
+            <div class="card-header">
+                <h2>📤 Upload Course Assignment</h2>
+                <span class="badge badge-warning">2 Submissions Pending</span>
+            </div>
+            <form id="assignment-form" action="#" method="get">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="select-subject">Select Course & Assignment <span class="required" style="color: var(--danger);">*</span></label>
+                        <select id="select-subject" class="form-control" required>
+                            <option>Data Structures - Assignment 3 (BST Trees)</option>
+                            <option>Database Management - Sheet 4 (Normalization)</option>
+                            <option>Operating Systems - Lab 2 (CPU Scheduling)</option>
+                            <option>Software Engineering - SRS Document</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="file-upload">Choose File (PDF or ZIP up to 10MB) <span class="required" style="color: var(--danger);">*</span></label>
+                        <input type="file" id="file-upload" class="form-control" accept=".pdf,.zip,.rar" required>
+                    </div>
+                </div>
+
+                <div class="form-actions" style="margin-top: var(--space-sm); justify-content: flex-start;">
+                    <button type="submit" class="btn btn-primary">Upload Assignment to Portal</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Assignments Status Table -->
+        <div class="card">
+            <div class="card-header">
+                <h2>📋 Course Assignments Log</h2>
+            </div>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sr.</th>
+                            <th>Subject</th>
+                            <th>Assignment Title</th>
+                            <th>Assigned Date</th>
+                            <th>Deadline</th>
+                            <th>Submission Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><b>Data Structures</b></td>
+                            <td>BST Implementation Code</td>
+                            <td>25 Jul 2026</td>
+                            <td>08 Aug 2026</td>
+                            <td><span class="badge badge-danger">PENDING</span></td>
+                            <td><button type="button" class="btn btn-sm btn-primary" onclick="document.getElementById('select-subject').focus()">Upload</button></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><b>Database Systems</b></td>
+                            <td>SQL Queries & Normalization</td>
+                            <td>28 Jul 2026</td>
+                            <td>10 Aug 2026</td>
+                            <td><span class="badge badge-danger">PENDING</span></td>
+                            <td><button type="button" class="btn btn-sm btn-primary" onclick="document.getElementById('select-subject').focus()">Upload</button></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><b>Operating Systems</b></td>
+                            <td>CPU Scheduling Programs</td>
+                            <td>15 Jul 2026</td>
+                            <td>30 Jul 2026</td>
+                            <td><span class="badge badge-success">SUBMITTED</span></td>
+                            <td><button type="button" class="btn btn-sm btn-outline" onclick="alert('Viewing submitted PDF for CPU Scheduling Programs')">View Submission</button></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><b>Software Engg</b></td>
+                            <td>SRS Document</td>
+                            <td>10 Jul 2026</td>
+                            <td>24 Jul 2026</td>
+                            <td><span class="badge badge-success">SUBMITTED</span></td>
+                            <td><button type="button" class="btn btn-sm btn-outline" onclick="alert('Viewing submitted SRS Document')">View Submission</button></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><b>Mini Project</b></td>
+                            <td>Abstract Submission</td>
+                            <td>05 Jul 2026</td>
+                            <td>20 Jul 2026</td>
+                            <td><span class="badge badge-success">APPROVED</span></td>
+                            <td><button type="button" class="btn btn-sm btn-outline" onclick="alert('Viewing Approved Project Abstract')">View Submission</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- University Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4>The Backbenchers University</h4>
+                <p>An autonomous premier technical institute dedicated to engineering excellence, cutting-edge innovation, and holistic student development.</p>
+                <p style="margin-top: var(--space-xs); font-size: var(--font-xs); color: var(--accent-light);">NAAC 'A++' Grade | Approved by AICTE, New Delhi</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Institution</a></li>
+                    <li><a href="login.html">Student / Staff Login</a></li>
+                    <li><a href="events.html">Campus Events</a></li>
+                    <li><a href="placements.html">Placement Records</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Student Portal</h4>
+                <ul class="footer-links">
+                    <li><a href="dashboard.html">Student Dashboard</a></li>
+                    <li><a href="attendance.html">Attendance Tracker</a></li>
+                    <li><a href="academics.html">Academic Records</a></li>
+                    <li><a href="fees.html">Fee Portal</a></li>
+                    <li><a href="contact.html">Support & Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Campus Address</h4>
+                <p>Knowledge City, Tech Valley Campus<br>Pune - 411048, Maharashtra, India</p>
+                <p style="margin-top: 6px;"><b>Email:</b> info@backbenchers.edu.in<br><b>Helpline:</b> +91 20 2765 4321</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 The Backbenchers University. Designed for Practical 3 - Responsive UI Design (Pure CSS Grid & Flexbox).</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

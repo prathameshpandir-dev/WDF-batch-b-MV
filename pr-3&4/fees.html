@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fee Payment & Accounts - The Backbenchers University</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container header-inner">
+            <a href="index.html" class="header-brand">
+                <img src="images/logo.svg" alt="University Logo" class="header-logo">
+                <div class="header-title">
+                    <h1>THE BACKBENCHERS UNIVERSITY</h1>
+                    <p>Accredited NAAC A++ | Autonomous Engineering Institute</p>
+                </div>
+            </a>
+            <div class="header-quick-info">
+                <span class="badge-tag">Academic Year 2025-26</span>
+                <span class="badge-tag">Student ID: SYCS104</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container nav-container">
+            <div class="nav-brand-label">
+                <span>Navigation Menu</span>
+            </div>
+            <button class="nav-toggle-btn" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li class="nav-dropdown">
+                        <button class="nav-dropdown-btn">Student Portal ▾</button>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="profile.html">Student Profile</a></li>
+                            <li><a href="attendance.html">Attendance</a></li>
+                            <li><a href="academics.html">Academics & Grades</a></li>
+                            <li><a href="timetable.html">Class Timetable</a></li>
+                            <li><a href="assignments.html">Assignments</a></li>
+                            <li><a href="fees.html" class="active">Fee Payment</a></li>
+                            <li><a href="library.html">Digital Library</a></li>
+                            <li><a href="placements.html">Placements</a></li>
+                            <li><a href="settings.html">Account Settings</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <main class="container" style="margin-top: var(--space-lg); margin-bottom: var(--space-xl);">
+
+        <!-- Fee KPI Metric Grid (Pure CSS Grid) -->
+        <div class="dash-grid">
+            <div class="metric-card">
+                <div class="metric-icon">
+                    <img src="images/assignment.svg" alt="Annual Fee">
+                </div>
+                <div class="metric-details">
+                    <h4>Total Annual Fee</h4>
+                    <div class="metric-value">₹85,000</div>
+                    <div class="metric-sub">Tuition + Dev + Hostel</div>
+                </div>
+            </div>
+
+            <div class="metric-card success">
+                <div class="metric-icon">
+                    <img src="images/attendance.svg" alt="Paid Fee">
+                </div>
+                <div class="metric-details">
+                    <h4>Total Paid Fee</h4>
+                    <div class="metric-value" style="color: var(--success);">₹72,500</div>
+                    <div class="metric-sub">Installments 1 & 2</div>
+                </div>
+            </div>
+
+            <div class="metric-card danger">
+                <div class="metric-icon">
+                    <img src="images/fees.svg" alt="Pending Fee">
+                </div>
+                <div class="metric-details">
+                    <h4>Pending Balance</h4>
+                    <div class="metric-value pending-fee-val" id="pending-fee-val" style="color: var(--danger);">₹12,500</div>
+                    <div class="metric-sub">Hostel Installment 2</div>
+                </div>
+            </div>
+
+            <div class="metric-card accent">
+                <div class="metric-icon">
+                    <img src="images/profile.svg" alt="Due Date">
+                </div>
+                <div class="metric-details">
+                    <h4>Payment Due Date</h4>
+                    <div class="metric-value" style="font-size: var(--font-lg);">15 Aug 2026</div>
+                    <div class="metric-sub">
+                        <button type="button" class="btn btn-sm btn-accent" id="pay-fee-btn" style="padding: 3px 8px; margin-top: 2px;">Pay Online Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Semester 4 Fee Breakdown -->
+        <div class="card">
+            <div class="card-header">
+                <h2>💳 Academic Year 2025-26 Fee Breakdown</h2>
+                <span class="badge badge-info">Receipt Verified</span>
+            </div>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Particulars / Fee Head</th>
+                            <th>Amount (INR)</th>
+                            <th>Payment Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tuition Fee (Government Approved)</td>
+                            <td>₹55,000</td>
+                            <td><span class="badge badge-success">PAID</span></td>
+                        </tr>
+                        <tr>
+                            <td>Development Fee</td>
+                            <td>₹12,000</td>
+                            <td><span class="badge badge-success">PAID</span></td>
+                        </tr>
+                        <tr>
+                            <td>University Exam & Valuation Fee</td>
+                            <td>₹3,500</td>
+                            <td><span class="badge badge-success">PAID</span></td>
+                        </tr>
+                        <tr>
+                            <td>Library & Lab Maintenance Fee</td>
+                            <td>₹2,000</td>
+                            <td><span class="badge badge-success">PAID</span></td>
+                        </tr>
+                        <tr>
+                            <td>Hostel & Mess Facility (Installment 2)</td>
+                            <td>₹12,500</td>
+                            <td id="hostel-fee-status"><span class="badge badge-danger">PENDING</span></td>
+                        </tr>
+                        <tr style="font-weight: 700; background-color: var(--bg-alt);">
+                            <td>TOTAL ANNUAL FEE</td>
+                            <td>₹85,000</td>
+                            <td><span class="badge badge-info">Partially Paid</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Payment History Table -->
+        <div class="card">
+            <div class="card-header">
+                <h2>🧾 Verified E-Receipts & Payment History</h2>
+            </div>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Receipt No</th>
+                            <th>Date Paid</th>
+                            <th>Transaction Reference</th>
+                            <th>Payment Mode</th>
+                            <th>Amount Paid</th>
+                            <th>E-Receipt</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>REC-2025-0981</td>
+                            <td>15 Jul 2025</td>
+                            <td>TXN891234901</td>
+                            <td>NetBanking (SBI)</td>
+                            <td><b>₹42,500</b></td>
+                            <td><button type="button" class="btn btn-sm btn-outline" onclick="alert('Downloading verified PDF receipt: REC-2025-0981')">Download Receipt</button></td>
+                        </tr>
+                        <tr>
+                            <td>REC-2026-0124</td>
+                            <td>10 Jan 2026</td>
+                            <td>TXN901238411</td>
+                            <td>UPI (GooglePay)</td>
+                            <td><b>₹30,000</b></td>
+                            <td><button type="button" class="btn btn-sm btn-outline" onclick="alert('Downloading verified PDF receipt: REC-2026-0124')">Download Receipt</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- University Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4>The Backbenchers University</h4>
+                <p>An autonomous premier technical institute dedicated to engineering excellence, cutting-edge innovation, and holistic student development.</p>
+                <p style="margin-top: var(--space-xs); font-size: var(--font-xs); color: var(--accent-light);">NAAC 'A++' Grade | Approved by AICTE, New Delhi</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Institution</a></li>
+                    <li><a href="login.html">Student / Staff Login</a></li>
+                    <li><a href="events.html">Campus Events</a></li>
+                    <li><a href="placements.html">Placement Records</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Student Portal</h4>
+                <ul class="footer-links">
+                    <li><a href="dashboard.html">Student Dashboard</a></li>
+                    <li><a href="attendance.html">Attendance Tracker</a></li>
+                    <li><a href="academics.html">Academic Records</a></li>
+                    <li><a href="fees.html">Fee Portal</a></li>
+                    <li><a href="contact.html">Support & Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Campus Address</h4>
+                <p>Knowledge City, Tech Valley Campus<br>Pune - 411048, Maharashtra, India</p>
+                <p style="margin-top: 6px;"><b>Email:</b> info@backbenchers.edu.in<br><b>Helpline:</b> +91 20 2765 4321</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 The Backbenchers University. Designed for Practical 3 - Responsive UI Design (Pure CSS Grid & Flexbox).</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
