@@ -8,7 +8,6 @@
 </head>
 <body class="login-body-wrapper">
 
-    <!-- Minimal Secure Header -->
     <header class="login-header">
         <div class="d-flex align-center gap-sm">
             <img src="images/logo.svg" alt="University Crest" style="width: 42px; height: 42px;">
@@ -24,11 +23,9 @@
         </div>
     </header>
 
-    <!-- Main Authentication Gateway -->
     <main class="login-main">
         <div class="login-card-container">
 
-            <!-- Login Form Panel -->
             <div class="login-form-side">
                 <div style="text-align: center; margin-bottom: var(--space-xl);">
                     <img src="images/logo.svg" alt="University Crest" style="width: 52px; height: 52px; margin-bottom: var(--space-xs);">
@@ -38,7 +35,6 @@
 
                 <form id="login-form">
 
-                    <!-- Role Selector -->
                     <div class="form-group">
                         <label for="login-role">Account Category</label>
                         <select id="login-role" class="form-control">
@@ -48,13 +44,11 @@
                         </select>
                     </div>
 
-                    <!-- PRN / Roll Input -->
                     <div class="form-group">
                         <label for="login-username">Roll Number / PRN / University Email <span class="required" style="color: var(--danger);">*</span></label>
                         <input type="text" id="login-username" class="form-control" placeholder="Enter Roll No. / PRN / Email" value="SYCS104" required autocomplete="username">
                     </div>
 
-                    <!-- Password Input with Show/Hide Toggle -->
                     <div class="form-group">
                         <div class="d-flex justify-between align-center">
                             <label for="login-password">Password <span class="required" style="color: var(--danger);">*</span></label>
@@ -68,20 +62,17 @@
                         </div>
                     </div>
 
-                    <!-- Remember Me -->
                     <div class="form-check" style="margin: var(--space-md) 0;">
                         <input type="checkbox" id="login-remember" checked>
                         <label for="login-remember" class="form-check-label">Remember my login session on this browser</label>
                     </div>
 
-                    <!-- Sign In Action Button -->
                     <div style="margin-top: var(--space-md);">
                         <button type="submit" class="btn btn-accent btn-block btn-lg" id="login-submit-btn" style="font-size: var(--font-base);">
                             Sign In & Unlock Portal &raquo;
                         </button>
                     </div>
 
-                    <!-- Registration Redirection Link -->
                     <div style="text-align: center; margin-top: var(--space-lg); padding-top: var(--space-md); border-top: 1px solid var(--border-color); font-size: var(--font-sm);">
                         Don't have an institutional account? <br>
                         <a href="registration.html" id="go-to-register-link" style="color: var(--secondary-light); font-weight: 700; text-decoration: underline; display: inline-block; margin-top: 4px;">
@@ -95,7 +86,6 @@
         </div>
     </main>
 
-    <!-- Minimal University Footer -->
     <footer style="margin-top: auto; padding: var(--space-md) 0; border-top: 1px solid rgba(255, 255, 255, 0.1); background-color: rgba(0, 0, 0, 0.3);">
         <div class="container" style="text-align: center; font-size: var(--font-xs); color: #94a3b8;">
             <p>&copy; 2026 The Backbenchers University. Authorized Student & Faculty Access Only.</p>

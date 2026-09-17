@@ -8,7 +8,6 @@
 </head>
 <body>
 
-    <!-- Header Section -->
     <header>
         <div class="container header-inner">
             <a href="index.html" class="header-brand">
@@ -28,7 +27,6 @@
         </div>
     </header>
 
-    <!-- Navigation Bar -->
     <nav>
         <div class="container nav-container">
             <div class="nav-brand-label">
@@ -67,10 +65,8 @@
         </div>
     </nav>
 
-    <!-- Main Container -->
     <main class="container" style="margin-top: var(--space-lg); margin-bottom: var(--space-xl);">
 
-        <!-- Featured Event Hero Card (Pure Flexbox) -->
         <div class="card" style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); color: var(--text-inverse); border: none;">
             <div class="d-flex flex-col gap-md">
                 <div class="d-flex flex-wrap justify-between align-center gap-sm">
@@ -96,7 +92,6 @@
             </div>
         </div>
 
-        <!-- Filter Bar (Pure Flexbox + JS Category Toggling) -->
         <div class="filter-bar">
             <button class="filter-btn active" data-category="all">All Events (6)</button>
             <button class="filter-btn" data-category="technical">Technical</button>
@@ -105,10 +100,8 @@
             <button class="filter-btn" data-category="workshops">Workshops</button>
         </div>
 
-        <!-- Events Grid (Pure CSS Grid: 1 col Mobile, 2 col Tablet, 3 col Desktop) -->
         <div class="events-grid">
 
-            <!-- Event Card 1 -->
             <div class="event-card" data-category="technical">
                 <div class="event-image-wrap">
                     <span class="event-date-badge">15 AUG</span>
@@ -128,7 +121,6 @@
                 </div>
             </div>
 
-            <!-- Event Card 2 -->
             <div class="event-card" data-category="workshops">
                 <div class="event-image-wrap" style="background: linear-gradient(135deg, #16324f 0%, #0369a1 100%);">
                     <span class="event-date-badge">22 AUG</span>
@@ -148,7 +140,6 @@
                 </div>
             </div>
 
-            <!-- Event Card 3 -->
             <div class="event-card" data-category="cultural">
                 <div class="event-image-wrap" style="background: linear-gradient(135deg, #7c2d12 0%, #d97706 100%);">
                     <span class="event-date-badge">05 SEP</span>
@@ -168,7 +159,6 @@
                 </div>
             </div>
 
-            <!-- Event Card 4 -->
             <div class="event-card" data-category="sports">
                 <div class="event-image-wrap" style="background: linear-gradient(135deg, #14532d 0%, #16a34a 100%);">
                     <span class="event-date-badge">18 SEP</span>
@@ -188,7 +178,6 @@
                 </div>
             </div>
 
-            <!-- Event Card 5 -->
             <div class="event-card" data-category="technical">
                 <div class="event-image-wrap" style="background: linear-gradient(135deg, #312e81 0%, #4338ca 100%);">
                     <span class="event-date-badge">26 SEP</span>
@@ -208,7 +197,6 @@
                 </div>
             </div>
 
-            <!-- Event Card 6 -->
             <div class="event-card" data-category="workshops">
                 <div class="event-image-wrap" style="background: linear-gradient(135deg, #064e3b 0%, #0d9488 100%);">
                     <span class="event-date-badge">08 OCT</span>
@@ -232,7 +220,6 @@
 
     </main>
 
-    <!-- Reusable Event Registration Modal Component (Pure CSS/JS) -->
     <div class="modal-overlay" id="event-modal">
         <div class="modal-dialog">
             <div class="modal-header">
@@ -271,7 +258,6 @@
         </div>
     </div>
 
-    <!-- University Footer -->
     <footer>
         <div class="container footer-grid">
             <div class="footer-col">

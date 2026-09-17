@@ -1,14 +1,5 @@
-/* ==========================================================================
-   The Backbenchers University - Student Portal
-   Practical 3 & 4: Responsive UI Design & DOM Interactivity
-   Mobile-First Pure CSS with Light / Dark Theme Support
-   ========================================================================== */
-
-/* --------------------------------------------------------------------------
-   1. CSS Custom Properties (Design System Variables - Light Theme Default)
-   -------------------------------------------------------------------------- */
 :root {
-    /* Brand Colors */
+
     --primary: #0d233a;
     --primary-dark: #071524;
     --primary-light: #16324f;
@@ -19,20 +10,17 @@
     --secondary-dark: #0369a1;
     --secondary-light: #38bdf8;
 
-    /* Neutral & Surface Colors */
     --bg-body: #f8fafc;
     --bg-surface: #ffffff;
     --bg-alt: #f1f5f9;
     --border-color: #e2e8f0;
     --border-dark: #cbd5e1;
-    
-    /* Text Colors */
+
     --text-primary: #0f172a;
     --text-secondary: #475569;
     --text-muted: #64748b;
     --text-inverse: #ffffff;
 
-    /* Functional / Status Colors */
     --success: #16a34a;
     --success-bg: #dcfce7;
     --success-border: #bbf7d0;
@@ -46,26 +34,23 @@
     --info-bg: #e0f2fe;
     --info-border: #bae6fd;
 
-    /* Typography Scale */
     --font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    --font-xs: 0.75rem;     /* 12px */
-    --font-sm: 0.875rem;    /* 14px */
-    --font-base: 1rem;       /* 16px */
-    --font-md: 1.125rem;    /* 18px */
-    --font-lg: 1.25rem;     /* 20px */
-    --font-xl: 1.5rem;      /* 24px */
-    --font-2xl: 1.875rem;   /* 30px */
-    --font-3xl: 2.25rem;    /* 36px */
+    --font-xs: 0.75rem;
+    --font-sm: 0.875rem;
+    --font-base: 1rem;
+    --font-md: 1.125rem;
+    --font-lg: 1.25rem;
+    --font-xl: 1.5rem;
+    --font-2xl: 1.875rem;
+    --font-3xl: 2.25rem;
 
-    /* Spacing Scale */
-    --space-xs: 0.25rem;    /* 4px */
-    --space-sm: 0.5rem;     /* 8px */
-    --space-md: 1rem;       /* 16px */
-    --space-lg: 1.5rem;     /* 24px */
-    --space-xl: 2rem;       /* 32px */
-    --space-2xl: 3rem;      /* 48px */
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
 
-    /* Radii & Shadows */
     --radius-sm: 4px;
     --radius-md: 8px;
     --radius-lg: 12px;
@@ -74,21 +59,17 @@
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
 
-    /* Transitions */
     --transition-fast: 0.15s ease;
     --transition-normal: 0.25s ease;
 }
 
-/* --------------------------------------------------------------------------
-   Practical 4: Dark Theme Variable Overrides (Persistent via localStorage)
-   -------------------------------------------------------------------------- */
 [data-theme="dark"] {
     --bg-body: #0b1320;
     --bg-surface: #142033;
     --bg-alt: #1c2c47;
     --border-color: #273b5c;
     --border-dark: #3a537d;
-    
+
     --text-primary: #f1f5f9;
     --text-secondary: #cbd5e1;
     --text-muted: #94a3b8;
@@ -170,9 +151,6 @@
     background-color: #060b13;
 }
 
-/* --------------------------------------------------------------------------
-   2. Reset & Base Typography (Mobile First)
-   -------------------------------------------------------------------------- */
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -217,9 +195,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
-/* --------------------------------------------------------------------------
-   Practical 4: Top Dismissible Notification Banner
-   -------------------------------------------------------------------------- */
 .notification-banner {
     background: linear-gradient(90deg, #d97706 0%, #b45309 100%);
     color: #ffffff;
@@ -282,9 +257,6 @@ h1, h2, h3, h4, h5, h6 {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* --------------------------------------------------------------------------
-   3. Mobile-First Layout Containers
-   -------------------------------------------------------------------------- */
 .container {
     width: 100%;
     padding-left: var(--space-md);
@@ -293,9 +265,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: auto;
 }
 
-/* --------------------------------------------------------------------------
-   4. Header & Brand Banner (Flexbox)
-   -------------------------------------------------------------------------- */
 header {
     background-color: var(--primary);
     color: var(--text-inverse);
@@ -358,9 +327,6 @@ header {
     font-weight: 600;
 }
 
-/* --------------------------------------------------------------------------
-   Practical 4: Theme Toggle Button
-   -------------------------------------------------------------------------- */
 .theme-toggle-btn {
     background: rgba(255, 255, 255, 0.12);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -383,9 +349,6 @@ header {
     border-color: var(--accent-light);
 }
 
-/* --------------------------------------------------------------------------
-   5. Responsive Navigation Bar (Pure Flexbox + Mobile Drawer)
-   -------------------------------------------------------------------------- */
 nav {
     background-color: var(--primary-light);
     position: sticky;
@@ -412,7 +375,6 @@ nav {
     letter-spacing: 0.5px;
 }
 
-/* Hamburger Button */
 .nav-toggle-btn {
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -440,7 +402,6 @@ nav {
     transition: transform var(--transition-normal), opacity var(--transition-normal);
 }
 
-/* Mobile Collapsible Drawer */
 .nav-menu {
     display: none;
     flex-direction: column;
@@ -488,7 +449,6 @@ nav {
     border-left-color: var(--accent-light);
 }
 
-/* Nav Portal Dropdown */
 .nav-dropdown {
     position: relative;
 }
@@ -524,9 +484,6 @@ nav {
     font-size: var(--font-xs);
 }
 
-/* --------------------------------------------------------------------------
-   Practical 4: Image & Content Slider (Carousel)
-   -------------------------------------------------------------------------- */
 .slider-container {
     position: relative;
     overflow: hidden;
@@ -641,9 +598,6 @@ nav {
     border-radius: var(--radius-full);
 }
 
-/* --------------------------------------------------------------------------
-   Practical 4: Collapsible FAQ Accordion
-   -------------------------------------------------------------------------- */
 .faq-accordion {
     display: flex;
     flex-direction: column;
@@ -720,9 +674,6 @@ nav {
     border-top: 1px solid var(--border-color);
 }
 
-/* --------------------------------------------------------------------------
-   6. Pure CSS Grid System (Responsive Grids)
-   -------------------------------------------------------------------------- */
 .grid {
     display: grid;
     gap: var(--space-md);
@@ -765,9 +716,6 @@ nav {
     gap: var(--space-md);
 }
 
-/* --------------------------------------------------------------------------
-   7. Pure Flexbox Utilities
-   -------------------------------------------------------------------------- */
 .d-flex { display: flex; }
 .flex-col { flex-direction: column; }
 .flex-row { flex-direction: row; }
@@ -786,9 +734,6 @@ nav {
 .gap-lg { gap: var(--space-lg); }
 .flex-1 { flex: 1; }
 
-/* --------------------------------------------------------------------------
-   8. Cards & Content Surfaces
-   -------------------------------------------------------------------------- */
 .card {
     background-color: var(--bg-surface);
     border: 1px solid var(--border-color);
@@ -847,7 +792,6 @@ nav {
     justify-content: space-between;
 }
 
-/* Metric KPI Stat Tile */
 .metric-card {
     background-color: var(--bg-surface);
     border: 1px solid var(--border-color);
@@ -926,9 +870,6 @@ nav {
     margin-top: 2px;
 }
 
-/* --------------------------------------------------------------------------
-   9. Hero Section
-   -------------------------------------------------------------------------- */
 .hero {
     background: linear-gradient(135deg, var(--primary) 0%, #16324f 100%);
     color: var(--text-inverse);
@@ -986,9 +927,6 @@ nav {
     margin: 0;
 }
 
-/* --------------------------------------------------------------------------
-   10. Buttons & Interactive Controls
-   -------------------------------------------------------------------------- */
 .btn {
     display: inline-flex;
     align-items: center;
@@ -1086,9 +1024,6 @@ button:disabled, .btn:disabled {
     transform: none !important;
 }
 
-/* --------------------------------------------------------------------------
-   11. Form Inputs
-   -------------------------------------------------------------------------- */
 .form-group {
     display: flex;
     flex-direction: column;
@@ -1173,9 +1108,6 @@ textarea.form-control {
     justify-content: flex-end;
 }
 
-/* --------------------------------------------------------------------------
-   12. Event Cards & Filter Bar
-   -------------------------------------------------------------------------- */
 .filter-bar {
     display: flex;
     flex-wrap: wrap;
@@ -1286,9 +1218,6 @@ textarea.form-control {
     flex: 1;
 }
 
-/* --------------------------------------------------------------------------
-   13. Tables
-   -------------------------------------------------------------------------- */
 .table-responsive {
     width: 100%;
     overflow-x: auto;
@@ -1329,9 +1258,6 @@ tr:hover {
     background-color: #f1f5f9;
 }
 
-/* --------------------------------------------------------------------------
-   14. Status Badges & Pills
-   -------------------------------------------------------------------------- */
 .badge {
     display: inline-flex;
     align-items: center;
@@ -1369,9 +1295,6 @@ tr:hover {
     border: 1px solid var(--info-border);
 }
 
-/* --------------------------------------------------------------------------
-   15. Pure CSS & JS Modal Dialog
-   -------------------------------------------------------------------------- */
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -1445,9 +1368,6 @@ tr:hover {
     gap: var(--space-sm);
 }
 
-/* --------------------------------------------------------------------------
-   16. Star Rating Component
-   -------------------------------------------------------------------------- */
 .star-rating {
     display: flex;
     gap: 6px;
@@ -1466,9 +1386,6 @@ tr:hover {
     color: var(--accent-light);
 }
 
-/* --------------------------------------------------------------------------
-   17. Student Profile Header
-   -------------------------------------------------------------------------- */
 .profile-banner {
     display: flex;
     flex-direction: column;
@@ -1507,9 +1424,6 @@ tr:hover {
     margin-bottom: 4px;
 }
 
-/* --------------------------------------------------------------------------
-   18. University Footer
-   -------------------------------------------------------------------------- */
 footer {
     background-color: var(--primary);
     color: #cbd5e1;
@@ -1566,10 +1480,6 @@ footer {
     color: #94a3b8;
 }
 
-/* ==========================================================================
-   19. Progressive Enhancement Media Queries (Mobile-First)
-   ================================================-------------------------- */
-
 @media (min-width: 576px) {
     .container { max-width: 540px; }
     .header-inner { flex-direction: row; justify-content: space-between; text-align: left; }
@@ -1585,10 +1495,10 @@ footer {
     .container { max-width: 720px; }
     .header-logo { width: 58px; height: 58px; }
     .header-title h1 { font-size: 1.4rem; }
-    
+
     .nav-toggle-btn { display: none; }
     .nav-brand-label { display: none; }
-    
+
     .nav-menu {
         display: flex !important;
         flex-direction: row;
@@ -1608,7 +1518,7 @@ footer {
     }
 
     .nav-links li { width: auto; }
-    
+
     .nav-links a {
         padding: 8px 12px;
         font-size: var(--font-sm);
@@ -1667,9 +1577,6 @@ footer {
     .container { max-width: 1140px; }
 }
 
-/* ==========================================================================
-   Dedicated Full-Screen Login Page Styling
-   ========================================================================== */
 .login-body-wrapper {
     min-height: 100vh;
     display: flex;
@@ -1712,9 +1619,6 @@ footer {
     justify-content: center;
 }
 
-/* ==========================================================================
-   Dedicated Registration Page & Validation Styling
-   ========================================================================== */
 .register-card-container {
     width: 100%;
     max-width: 620px;
@@ -1729,8 +1633,3 @@ footer {
 .register-form-content {
     padding: var(--space-xl) var(--space-xl);
 }
-
-
-
-
-
