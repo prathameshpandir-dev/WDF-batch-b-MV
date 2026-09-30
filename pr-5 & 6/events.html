@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Events & Hackathons - The Backbenchers University</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container header-inner">
+            <a href="index.html" class="header-brand">
+                <img src="images/logo.svg" alt="University Logo" class="header-logo">
+                <div class="header-title">
+                    <h1>THE BACKBENCHERS UNIVERSITY</h1>
+                    <p>Accredited NAAC A++ | Autonomous Engineering Institute</p>
+                </div>
+            </a>
+            <div class="header-quick-info">
+                <span class="badge-tag">Academic Year 2025-26</span>
+                <span class="badge-tag">Student Activities Cell</span>
+                <button class="theme-toggle-btn" aria-label="Toggle Dark/Light theme">
+                    🌙 <span>Dark</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container nav-container">
+            <div class="nav-brand-label">
+                <span>Navigation Menu</span>
+            </div>
+            <button class="nav-toggle-btn" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="events.html" class="active">Events</a></li>
+                    <li class="nav-dropdown">
+                        <button class="nav-dropdown-btn">Student Portal ▾</button>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="profile.html">Student Profile</a></li>
+                            <li><a href="attendance.html">Attendance</a></li>
+                            <li><a href="academics.html">Academics & Grades</a></li>
+                            <li><a href="timetable.html">Class Timetable</a></li>
+                            <li><a href="assignments.html">Assignments</a></li>
+                            <li><a href="fees.html">Fee Payment</a></li>
+                            <li><a href="library.html">Digital Library</a></li>
+                            <li><a href="placements.html">Placements</a></li>
+                            <li><a href="settings.html">Account Settings</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <main class="container" style="margin-top: var(--space-lg); margin-bottom: var(--space-xl);">
+
+        <!-- Featured Event Hero Card (Pure Flexbox) -->
+        <div class="card" style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); color: var(--text-inverse); border: none;">
+            <div class="d-flex flex-col gap-md">
+                <div class="d-flex flex-wrap justify-between align-center gap-sm">
+                    <span class="badge badge-warning" style="font-size: var(--font-xs); padding: 6px 12px;">🌟 FLAGSHIP ANNUAL HACKATHON</span>
+                    <span style="font-size: var(--font-xs); color: var(--accent-light); font-weight: 600;">Cash Prizes Worth ₹2,50,000</span>
+                </div>
+                <div>
+                    <h2 style="color: var(--text-inverse); font-size: var(--font-2xl); margin-bottom: 8px;">CodeFest 2026: 24-Hour National Hackathon</h2>
+                    <p style="color: #cbd5e1; font-size: var(--font-sm); max-width: 780px;">
+                        Build innovative solutions in Generative AI, Web3, FinTech, and Green Computing. 50+ shortlisted teams will compete live on campus with mentors from Google, Microsoft, and NVIDIA.
+                    </p>
+                </div>
+                <div class="d-flex flex-wrap align-center justify-between gap-md" style="border-top: 1px solid rgba(255, 255, 255, 0.15); padding-top: var(--space-md);">
+                    <div class="d-flex flex-wrap gap-md" style="font-size: var(--font-xs); color: #cbd5e1;">
+                        <span>📅 <b>Date:</b> August 15 - 16, 2026</span>
+                        <span>📍 <b>Venue:</b> Central Innovation Auditorium</span>
+                        <span>👥 <b>Team Size:</b> 2 - 4 Members</span>
+                    </div>
+                    <button class="btn btn-accent btn-lg" data-modal-target="event-modal" data-event-title="CodeFest 2026: 24-Hour National Hackathon">
+                        Register Team Now &raquo;
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Practical 6: Dynamic Data Toolbar (Search, Filter, Sort, Reset) -->
+        <div class="events-toolbar-card">
+            <div class="events-toolbar-row">
+                <!-- Search Box -->
+                <div class="toolbar-search-col">
+                    <label for="event-search-input" style="font-size: var(--font-xs); font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 4px;">🔍 Search Events</label>
+                    <input type="text" id="event-search-input" class="form-control" placeholder="Search by title, description, or venue...">
+                </div>
+
+                <!-- Category Filter Dropdown -->
+                <div class="toolbar-filter-col">
+                    <label for="event-category-filter" style="font-size: var(--font-xs); font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 4px;">📂 Category Filter</label>
+                    <select id="event-category-filter" class="form-control">
+                        <option value="all" selected>All Categories</option>
+                        <option value="technical">Technical</option>
+                        <option value="workshops">Workshops</option>
+                        <option value="cultural">Cultural</option>
+                        <option value="sports">Sports</option>
+                    </select>
+                </div>
+
+                <!-- Sorting Dropdown -->
+                <div class="toolbar-sort-col">
+                    <label for="event-sort-by" style="font-size: var(--font-xs); font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 4px;">↕️ Sort Records</label>
+                    <select id="event-sort-by" class="form-control">
+                        <option value="date-asc" selected>Date: Upcoming First (Ascending)</option>
+                        <option value="date-desc">Date: Latest First (Descending)</option>
+                        <option value="title-asc">Title: A to Z (Ascending)</option>
+                        <option value="title-desc">Title: Z to A (Descending)</option>
+                    </select>
+                </div>
+
+                <!-- Reset Button -->
+                <div class="toolbar-action-col" style="align-self: flex-end;">
+                    <button type="button" id="event-reset-btn" class="btn btn-outline" style="height: 38px;">Reset Filters</button>
+                </div>
+            </div>
+
+            <!-- Stats / Metadata Bar -->
+            <div class="events-stats-bar">
+                <div>
+                    <span id="events-count-info">Loading campus events from JSON...</span>
+                </div>
+                <div>
+                    <span class="badge badge-info" id="events-badge-info">Practical 6 - Fetch API</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category Quick Buttons (Synchronized with dropdown) -->
+        <div class="filter-bar" id="events-quick-filters">
+            <button type="button" class="filter-btn active" data-category="all">All Events</button>
+            <button type="button" class="filter-btn" data-category="technical">Technical</button>
+            <button type="button" class="filter-btn" data-category="cultural">Cultural</button>
+            <button type="button" class="filter-btn" data-category="sports">Sports</button>
+            <button type="button" class="filter-btn" data-category="workshops">Workshops</button>
+        </div>
+
+        <!-- Loading State Indicator -->
+        <div id="events-loading" class="events-status-message">
+            <div style="font-size: 2rem; margin-bottom: 8px;">⏳</div>
+            <h3>Loading Campus Events...</h3>
+            <p style="color: var(--text-muted); font-size: var(--font-sm);">Fetching event records asynchronously using Fetch API from <code>events.json</code>.</p>
+        </div>
+
+        <!-- Friendly Error Display -->
+        <div id="events-error" class="events-error-box" role="alert">
+            <h3>⚠️ Unable to Load Events Data</h3>
+            <p id="events-error-text" style="margin: 4px 0 0 0; font-size: var(--font-sm);">Please make sure the server is running and <code>events.json</code> is accessible.</p>
+        </div>
+
+        <!-- No Records Found Friendly Message -->
+        <div id="events-not-found" class="events-status-message" style="display: none;">
+            <div style="font-size: 2rem; margin-bottom: 8px;">🔍</div>
+            <h3>No Matching Events Found</h3>
+            <p style="color: var(--text-muted); font-size: var(--font-sm); margin-bottom: var(--space-md);">No campus events matched your search keywords or filter criteria.</p>
+            <button type="button" class="btn btn-primary btn-sm" id="clear-search-btn">Clear Search & Filters</button>
+        </div>
+
+        <!-- Dynamic Events Grid Container (Populated via JavaScript map/slice) -->
+        <div id="events-grid" class="events-grid"></div>
+
+        <!-- Pagination Controls -->
+        <div id="events-pagination" class="events-pagination-bar" style="display: none;">
+            <button type="button" id="prev-page-btn" class="page-btn" aria-label="Previous Page">
+                &laquo; Previous
+            </button>
+            <span id="page-counter-badge" class="page-counter-badge">
+                Page <b id="current-page-num" style="margin: 0 4px;">1</b> of <b id="total-pages-num" style="margin: 0 4px;">1</b>
+            </span>
+            <button type="button" id="next-page-btn" class="page-btn" aria-label="Next Page">
+                Next &raquo;
+            </button>
+        </div>
+
+    </main>
+
+    <!-- Reusable Event Registration Modal Component (Pure CSS/JS) -->
+    <div class="modal-overlay" id="event-modal">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3>🎟️ Event Registration</h3>
+                <button class="modal-close-btn" aria-label="Close dialog">&times;</button>
+            </div>
+            <form id="event-modal-form">
+                <div class="modal-body">
+                    <p style="margin-bottom: var(--space-sm);">You are registering for: <b class="modal-dynamic-title" style="color: var(--secondary);">Selected Event</b></p>
+                    
+                    <div class="form-group">
+                        <label for="modal-student-name">Full Name <span class="required" style="color: var(--danger);">*</span></label>
+                        <input type="text" id="modal-student-name" class="form-control" value="Rahul Ramesh Sharma" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="modal-roll">Student Roll Number / PRN <span class="required" style="color: var(--danger);">*</span></label>
+                        <input type="text" id="modal-roll" class="form-control" value="SYCS104" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="modal-email">Email Address (for e-Pass) <span class="required" style="color: var(--danger);">*</span></label>
+                        <input type="email" id="modal-email" class="form-control" value="rahul.sharma@backbenchers.edu.in" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="modal-team">Team Name (if participating as team)</label>
+                        <input type="text" id="modal-team" class="form-control" placeholder="e.g. ByteBackbenchers">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline" data-modal-close>Cancel</button>
+                    <button type="submit" class="btn btn-accent">Confirm Registration</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- University Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4>The Backbenchers University</h4>
+                <p>An autonomous premier technical institute dedicated to engineering excellence, cutting-edge innovation, and holistic student development.</p>
+                <p style="margin-top: var(--space-xs); font-size: var(--font-xs); color: var(--accent-light);">NAAC 'A++' Grade | Approved by AICTE, New Delhi</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Institution</a></li>
+                    <li><a href="login.html">Student / Staff Login</a></li>
+                    <li><a href="registration.html">Student Registration (Practical 5)</a></li>
+                    <li><a href="events.html">Campus Events (Practical 6)</a></li>
+                    <li><a href="placements.html">Placement Records</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Student Portal</h4>
+                <ul class="footer-links">
+                    <li><a href="dashboard.html">Student Dashboard</a></li>
+                    <li><a href="attendance.html">Attendance Tracker</a></li>
+                    <li><a href="academics.html">Academic Records</a></li>
+                    <li><a href="fees.html">Fee Portal</a></li>
+                    <li><a href="contact.html">Support & Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Campus Address</h4>
+                <p>Knowledge City, Tech Valley Campus<br>Pune - 411048, Maharashtra, India</p>
+                <p style="margin-top: 6px;"><b>Email:</b> info@backbenchers.edu.in<br><b>Helpline:</b> +91 20 2765 4321</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 The Backbenchers University. Designed for Practical 3 - Responsive UI Design (Pure CSS Grid & Flexbox).</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

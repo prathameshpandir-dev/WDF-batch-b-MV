@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback & Grievances - The Backbenchers University</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container header-inner">
+            <a href="index.html" class="header-brand">
+                <img src="images/logo.svg" alt="University Logo" class="header-logo">
+                <div class="header-title">
+                    <h1>THE BACKBENCHERS UNIVERSITY</h1>
+                    <p>Accredited NAAC A++ | Autonomous Engineering Institute</p>
+                </div>
+            </a>
+            <div class="header-quick-info">
+                <span class="badge-tag">Academic Year 2025-26</span>
+                <span class="badge-tag">Internal Quality Assurance Cell (IQAC)</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container nav-container">
+            <div class="nav-brand-label">
+                <span>Navigation Menu</span>
+            </div>
+            <button class="nav-toggle-btn" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li class="nav-dropdown">
+                        <button class="nav-dropdown-btn">Student Portal ▾</button>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="profile.html">Student Profile</a></li>
+                            <li><a href="attendance.html">Attendance</a></li>
+                            <li><a href="academics.html">Academics & Grades</a></li>
+                            <li><a href="timetable.html">Class Timetable</a></li>
+                            <li><a href="assignments.html">Assignments</a></li>
+                            <li><a href="fees.html">Fee Payment</a></li>
+                            <li><a href="library.html">Digital Library</a></li>
+                            <li><a href="placements.html">Placements</a></li>
+                            <li><a href="settings.html">Account Settings</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="feedback.html" class="active">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <main class="container" style="margin-top: var(--space-lg); margin-bottom: var(--space-xl);">
+
+        <!-- Page Introduction Card -->
+        <div class="card">
+            <div class="card-header">
+                <h2>💬 Student Feedback & Grievance Redressal Portal</h2>
+                <span class="badge badge-success">Confidential & Verified</span>
+            </div>
+            <div class="card-body">
+                <p>The Backbenchers University is dedicated to continuous institutional improvement. Your feedback directly shapes academic policies, laboratory upgrades, campus amenities, and digital services. All submissions are reviewed by the autonomous IQAC committee.</p>
+            </div>
+        </div>
+
+        <!-- 2-Column Responsive Layout: Feedback Form + Resolution Tracker -->
+        <div class="grid-2">
+
+            <!-- Feedback Submission Form -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>📝 Submit Your Feedback</h3>
+                </div>
+                <form id="student-feedback-form" action="#" method="post">
+
+                    <div class="form-group">
+                        <label for="feedback-category">Category of Feedback <span class="required" style="color: var(--danger);">*</span></label>
+                        <select id="feedback-category" class="form-control" required>
+                            <option value="Academic Curriculum">Academic Curriculum & Teaching</option>
+                            <option value="Laboratories & Equipment">Laboratories & Computing Equipment</option>
+                            <option value="Library & E-Resources">Library & Digital E-Resources</option>
+                            <option value="Hostel & Canteen">Hostel & Canteen Facilities</option>
+                            <option value="Portal & IT Support">Student Portal & IT Infrastructure</option>
+                        </select>
+                    </div>
+
+                    <!-- Star Ratings for Key Areas -->
+                    <div style="margin: var(--space-md) 0; display: flex; flex-direction: column; gap: var(--space-sm);">
+                        <div>
+                            <label style="font-size: var(--font-xs); font-weight: 700; color: var(--primary);">1. Teaching & Course Clarity:</label>
+                            <div class="star-rating">
+                                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                            </div>
+                            <input type="hidden" name="rating_teaching" value="4">
+                        </div>
+
+                        <div>
+                            <label style="font-size: var(--font-xs); font-weight: 700; color: var(--primary);">2. Computing Labs & Facilities:</label>
+                            <div class="star-rating">
+                                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                            </div>
+                            <input type="hidden" name="rating_labs" value="5">
+                        </div>
+
+                        <div>
+                            <label style="font-size: var(--font-xs); font-weight: 700; color: var(--primary);">3. Student Portal Experience:</label>
+                            <div class="star-rating">
+                                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                            </div>
+                            <input type="hidden" name="rating_portal" value="5">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="feedback-details">Detailed Suggestions or Grievance <span class="required" style="color: var(--danger);">*</span></label>
+                        <textarea id="feedback-details" class="form-control" rows="4" placeholder="Describe your observations, suggestions for improvement, or issue..." required></textarea>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" id="feedback-anonymous">
+                        <label for="feedback-anonymous" class="form-check-label">
+                            <b>Submit Anonymously</b> (Do not attach my Roll Number or Name)
+                        </label>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-accent btn-block">Submit Feedback to IQAC</button>
+                    </div>
+
+                </form>
+            </div>
+
+            <!-- Recently Resolved Feedback Tracker -->
+            <div class="d-flex flex-col gap-md">
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3>✅ IQAC Resolution Tracker</h3>
+                        <span class="badge badge-info">Action Taken Report</span>
+                    </div>
+                    <div class="d-flex flex-col gap-sm">
+                        <!-- Resolution Item 1 -->
+                        <div style="background-color: var(--bg-alt); padding: var(--space-sm); border-radius: var(--radius-sm); border-left: 3px solid var(--success);">
+                            <div class="d-flex justify-between align-center" style="margin-bottom: 4px;">
+                                <b style="font-size: var(--font-xs); color: var(--primary);">GPU Cluster Memory Upgrade</b>
+                                <span class="badge badge-success">Resolved</span>
+                            </div>
+                            <p style="font-size: var(--font-xs); color: var(--text-secondary); margin: 0;">
+                                Student request for increased GPU allocation for deep learning final year projects approved; 2 additional A100 nodes added to Computing Lab 2.
+                            </p>
+                        </div>
+
+                        <!-- Resolution Item 2 -->
+                        <div style="background-color: var(--bg-alt); padding: var(--space-sm); border-radius: var(--radius-sm); border-left: 3px solid var(--secondary);">
+                            <div class="d-flex justify-between align-center" style="margin-bottom: 4px;">
+                                <b style="font-size: var(--font-xs); color: var(--primary);">Digital Library 24x7 Extension</b>
+                                <span class="badge badge-info">Implemented</span>
+                            </div>
+                            <p style="font-size: var(--font-xs); color: var(--text-secondary); margin: 0;">
+                                Library reading room study hours extended up to 11:00 PM during mid-semester examination week.
+                            </p>
+                        </div>
+
+                        <!-- Resolution Item 3 -->
+                        <div style="background-color: var(--bg-alt); padding: var(--space-sm); border-radius: var(--radius-sm); border-left: 3px solid var(--warning);">
+                            <div class="d-flex justify-between align-center" style="margin-bottom: 4px;">
+                                <b style="font-size: var(--font-xs); color: var(--primary);">Campus Wi-Fi Bandwidth Boost</b>
+                                <span class="badge badge-warning">Under Review</span>
+                            </div>
+                            <p style="font-size: var(--font-xs); color: var(--text-secondary); margin: 0;">
+                                Wi-Fi access points in Academic Block B scheduled for dual-band 6GHz hardware replacement next month.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Redressal Guidelines Card -->
+                <div class="card" style="background-color: var(--bg-alt);">
+                    <h4 style="margin-bottom: 6px;">Need Urgent Assistance?</h4>
+                    <p style="font-size: var(--font-xs); color: var(--text-secondary); margin-bottom: 8px;">
+                        For critical examination or fee grievances, you can also meet the Student Grievance Officer in Person at Administrative Block, Room 102.
+                    </p>
+                    <a href="contact.html" class="btn btn-outline btn-sm">View Grievance Cell Contacts &raquo;</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- University Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4>The Backbenchers University</h4>
+                <p>An autonomous premier technical institute dedicated to engineering excellence, cutting-edge innovation, and holistic student development.</p>
+                <p style="margin-top: var(--space-xs); font-size: var(--font-xs); color: var(--accent-light);">NAAC 'A++' Grade | Approved by AICTE, New Delhi</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Institution</a></li>
+                    <li><a href="login.html">Student / Staff Login</a></li>
+                    <li><a href="events.html">Campus Events</a></li>
+                    <li><a href="placements.html">Placement Records</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Student Portal</h4>
+                <ul class="footer-links">
+                    <li><a href="dashboard.html">Student Dashboard</a></li>
+                    <li><a href="attendance.html">Attendance Tracker</a></li>
+                    <li><a href="academics.html">Academic Records</a></li>
+                    <li><a href="fees.html">Fee Portal</a></li>
+                    <li><a href="contact.html">Support & Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Campus Address</h4>
+                <p>Knowledge City, Tech Valley Campus<br>Pune - 411048, Maharashtra, India</p>
+                <p style="margin-top: 6px;"><b>Email:</b> info@backbenchers.edu.in<br><b>Helpline:</b> +91 20 2765 4321</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 The Backbenchers University. Designed for Practical 3 - Responsive UI Design (Pure CSS Grid & Flexbox).</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

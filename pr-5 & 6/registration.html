@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration - The Backbenchers University</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-body-wrapper">
+
+    <!-- Header -->
+    <header class="login-header">
+        <div class="d-flex align-center gap-sm">
+            <img src="images/logo.svg" alt="University Crest" style="width: 42px; height: 42px;">
+            <div>
+                <h1 style="font-size: 1.15rem; color: #ffffff; margin: 0; letter-spacing: 0.5px;">THE BACKBENCHERS UNIVERSITY</h1>
+                <p style="font-size: 0.75rem; color: var(--accent-light); margin: 0; font-weight: 600;">Autonomous Engineering Institute | Student Portal</p>
+            </div>
+        </div>
+        <div class="d-flex align-center gap-sm">
+            <button class="theme-toggle-btn" aria-label="Toggle Dark/Light theme">
+                🌙 <span>Dark</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Registration Section -->
+    <main class="login-main" style="padding: var(--space-xl) var(--space-md);">
+        <div class="register-card-container">
+            <div class="register-form-content">
+                <div style="text-align: center; margin-bottom: var(--space-lg);">
+                    <img src="images/logo.svg" alt="University Crest" style="width: 48px; height: 48px; margin-bottom: var(--space-xs);">
+                    <h2 style="font-size: var(--font-xl); margin-bottom: 4px; font-weight: 700;">Student Registration</h2>
+                    <p style="font-size: var(--font-sm); color: var(--text-muted); margin: 0;">Fill in the details below to create your portal account</p>
+                </div>
+
+                <!-- Registration Success Alert -->
+                <div id="registration-success-msg" class="registration-success-box" role="status" aria-live="polite">
+                    <h4 style="margin: 0 0 6px 0; font-size: var(--font-base); font-weight: 700;">🎉 Registration Successful!</h4>
+                    <p id="registration-success-details" style="margin: 0; font-size: var(--font-xs); line-height: 1.5;">Your portal account has been created. Redirecting to login...</p>
+                </div>
+
+                <form id="registration-form" novalidate>
+
+                    <!-- Account Category -->
+                    <div class="form-group" style="margin-bottom: var(--space-md);">
+                        <label for="reg-role">Account Category <span class="required" style="color: var(--danger);">*</span></label>
+                        <select id="reg-role" name="role" class="form-control">
+                            <option value="student" selected>🎓 Student Account</option>
+                            <option value="faculty">👨‍🏫 Faculty Account</option>
+                        </select>
+                    </div>
+
+                    <!-- Full Name -->
+                    <div class="form-group" style="margin-bottom: var(--space-md);">
+                        <label for="reg-fullname">Full Name <span class="required" style="color: var(--danger);">*</span></label>
+                        <input type="text" id="reg-fullname" name="fullname" class="form-control" placeholder="Enter your full name (letters and spaces only)" required aria-describedby="reg-fullname-error" aria-invalid="false">
+                        <div id="reg-fullname-error" class="error-feedback" role="alert" aria-live="polite"></div>
+                    </div>
+
+                    <!-- Email Address -->
+                    <div class="form-group" style="margin-bottom: var(--space-md);">
+                        <label for="reg-email">Email Address <span class="required" style="color: var(--danger);">*</span></label>
+                        <input type="email" id="reg-email" name="email" class="form-control" placeholder="e.g. rahul.sharma@example.com" required aria-describedby="reg-email-error" aria-invalid="false">
+                        <div id="reg-email-error" class="error-feedback" role="alert" aria-live="polite"></div>
+                    </div>
+
+                    <!-- Mobile Number (10-digit Indian Mobile) -->
+                    <div class="form-group" style="margin-bottom: var(--space-md);">
+                        <label for="reg-phone">Mobile Number <span class="required" style="color: var(--danger);">*</span></label>
+                        <input type="tel" id="reg-phone" name="phone" class="form-control" placeholder="10-digit mobile number (e.g. 9876543210)" maxlength="10" required aria-describedby="reg-phone-error" aria-invalid="false">
+                        <div id="reg-phone-error" class="error-feedback" role="alert" aria-live="polite"></div>
+                    </div>
+
+                    <!-- PRN / Roll Number -->
+                    <div class="form-group" style="margin-bottom: var(--space-md);">
+                        <label for="reg-prn">PRN / Roll Number <span class="required" style="color: var(--danger);">*</span></label>
+                        <input type="text" id="reg-prn" name="prn" class="form-control" placeholder="e.g. SYCS105" required aria-describedby="reg-prn-error" aria-invalid="false">
+                        <div id="reg-prn-error" class="error-feedback" role="alert" aria-live="polite"></div>
+                    </div>
+
+                    <!-- Course Dropdown -->
+                    <div class="form-group" style="margin-bottom: var(--space-md);">
+                        <label for="reg-course">Course / Degree <span class="required" style="color: var(--danger);">*</span></label>
+                        <select id="reg-course" name="course" class="form-control" required aria-describedby="reg-course-error" aria-invalid="false">
+                            <option value="" selected disabled>Select your enrolled course</option>
+                            <option value="B.Tech Computer Engineering">B.Tech Computer Engineering</option>
+                            <option value="B.Tech Information Technology">B.Tech Information Technology</option>
+                            <option value="B.Tech AI & Data Science">B.Tech AI & Data Science</option>
+                            <option value="B.Tech Electronics & Telecom">B.Tech Electronics & Telecom</option>
+                            <option value="B.Tech Mechanical Engineering">B.Tech Mechanical Engineering</option>
+                            <option value="MCA">MCA (Master of Computer Applications)</option>
+                        </select>
+                        <div id="reg-course-error" class="error-feedback" role="alert" aria-live="polite"></div>
+                    </div>
+
+                    <!-- Academic Year Dropdown -->
+                    <div class="form-group" style="margin-bottom: var(--space-md);">
+                        <label for="reg-year">Academic Year <span class="required" style="color: var(--danger);">*</span></label>
+                        <select id="reg-year" name="year" class="form-control" required aria-describedby="reg-year-error" aria-invalid="false">
+                            <option value="" selected disabled>Select your academic year</option>
+                            <option value="First Year (FE)">First Year (FE)</option>
+                            <option value="Second Year (SE)">Second Year (SE)</option>
+                            <option value="Third Year (TE)">Third Year (TE)</option>
+                            <option value="Final Year (BE)">Final Year (BE)</option>
+                        </select>
+                        <div id="reg-year-error" class="error-feedback" role="alert" aria-live="polite"></div>
+                    </div>
+
+                    <!-- Gender Selection (Radio Buttons) -->
+                    <div class="form-group" style="margin-bottom: var(--space-md);">
+                        <fieldset style="border: none; padding: 0; margin: 0;">
+                            <legend style="font-size: var(--font-sm); font-weight: 600; margin-bottom: 4px; color: var(--text-primary);">Gender <span class="required" style="color: var(--danger);">*</span></legend>
+                            <div class="radio-group" role="radiogroup" aria-describedby="reg-gender-error">
+                                <label class="radio-option">
+                                    <input type="radio" name="reg-gender" value="Male"> Male
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="reg-gender" value="Female"> Female
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="reg-gender" value="Other"> Other
+                                </label>
+                            </div>
+                        </fieldset>
+                        <div id="reg-gender-error" class="error-feedback" role="alert" aria-live="polite"></div>
+                    </div>
+
+                    <!-- Password with Toggle & Strength Indicator -->
+                    <div class="form-group" style="margin-bottom: var(--space-md);">
+                        <label for="reg-password">Password <span class="required" style="color: var(--danger);">*</span></label>
+                        <div style="position: relative; display: flex; align-items: center;">
+                            <input type="password" id="reg-password" name="password" class="form-control" placeholder="Min 8 chars, 1 uppercase, 1 lowercase, 1 number, 1 symbol" style="padding-right: 44px;" required aria-describedby="reg-password-error" aria-invalid="false">
+                            <button type="button" class="toggle-pass-visibility-btn" data-target="reg-password" aria-label="Toggle password visibility" style="position: absolute; right: 8px; background: transparent; border: none; font-size: 18px; cursor: pointer; color: var(--text-muted); padding: 4px 6px;">
+                                👁️
+                            </button>
+                        </div>
+                        <!-- Password Strength Indicator -->
+                        <div class="password-strength-container" aria-live="polite">
+                            <div class="password-strength-bar">
+                                <div id="reg-strength-bar" class="password-strength-fill"></div>
+                            </div>
+                            <div class="password-strength-text">
+                                <span>Password Strength:</span>
+                                <span id="reg-strength-label"><b>None</b></span>
+                            </div>
+                        </div>
+                        <div id="reg-password-error" class="error-feedback" role="alert" aria-live="polite"></div>
+                    </div>
+
+                    <!-- Confirm Password -->
+                    <div class="form-group" style="margin-bottom: var(--space-md);">
+                        <label for="reg-confirm-password">Confirm Password <span class="required" style="color: var(--danger);">*</span></label>
+                        <div style="position: relative; display: flex; align-items: center;">
+                            <input type="password" id="reg-confirm-password" name="confirmPassword" class="form-control" placeholder="Re-enter your password" style="padding-right: 44px;" required aria-describedby="reg-confirm-password-error" aria-invalid="false">
+                            <button type="button" class="toggle-pass-visibility-btn" data-target="reg-confirm-password" aria-label="Toggle confirm password visibility" style="position: absolute; right: 8px; background: transparent; border: none; font-size: 18px; cursor: pointer; color: var(--text-muted); padding: 4px 6px;">
+                                👁️
+                            </button>
+                        </div>
+                        <div id="reg-confirm-password-error" class="error-feedback" role="alert" aria-live="polite"></div>
+                    </div>
+
+                    <!-- Terms Agreement Checkbox -->
+                    <div class="form-check" style="margin-bottom: var(--space-lg);">
+                        <input type="checkbox" id="reg-terms" name="terms" required aria-describedby="reg-terms-error" aria-invalid="false">
+                        <label for="reg-terms" class="form-check-label" style="font-size: var(--font-xs); line-height: 1.5; cursor: pointer;">
+                            I agree to the university IT rules, data policy, and student code of conduct. <span class="required" style="color: var(--danger);">*</span>
+                        </label>
+                        <div id="reg-terms-error" class="error-feedback" role="alert" aria-live="polite"></div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div>
+                        <button type="submit" class="btn btn-accent btn-block btn-lg" id="register-submit-btn" style="font-size: var(--font-base);">
+                            Register Account &raquo;
+                        </button>
+                    </div>
+
+                    <!-- Login Link -->
+                    <div style="text-align: center; margin-top: var(--space-lg); padding-top: var(--space-md); border-top: 1px solid var(--border-color); font-size: var(--font-sm);">
+                        Already registered? <br>
+                        <a href="login.html" style="color: var(--secondary-light); font-weight: 700; text-decoration: underline; display: inline-block; margin-top: 4px;">
+                            &laquo; Back to Sign In
+                        </a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer style="margin-top: auto; padding: var(--space-md) 0; border-top: 1px solid rgba(255, 255, 255, 0.1); background-color: rgba(0, 0, 0, 0.3);">
+        <div class="container" style="text-align: center; font-size: var(--font-xs); color: #94a3b8;">
+            <p>&copy; 2026 The Backbenchers University. Authorized Student & Faculty Access Only.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

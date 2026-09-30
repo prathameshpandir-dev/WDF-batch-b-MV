@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Backbenchers University - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Practical 4: Top Dismissible Notification Banner -->
+    <div class="notification-banner" id="top-notification-banner" role="alert">
+        <div class="banner-content">
+            <span>📢 <b>Urgent Notice:</b> Mid-Semester Examination schedule for SY Computer Engineering released!</span>
+            <a href="academics.html">Check Portal Schedule &raquo;</a>
+        </div>
+        <button class="banner-close-btn" id="banner-close-btn" aria-label="Dismiss notification banner">&times;</button>
+    </div>
+
+    <!-- Header Section (Pure Flexbox) -->
+    <header>
+        <div class="container header-inner">
+            <a href="index.html" class="header-brand">
+                <img src="images/logo.svg" alt="University Logo" class="header-logo">
+                <div class="header-title">
+                    <h1>THE BACKBENCHERS UNIVERSITY</h1>
+                    <p>Accredited NAAC A++ | Autonomous Engineering Institute</p>
+                </div>
+            </a>
+            <div class="header-quick-info">
+                <span class="badge-tag">Academic Year 2025-26</span>
+                <span class="badge-tag">Helpline: +91 20 2765 4321</span>
+                <!-- Practical 4: Light / Dark Theme Switcher -->
+                <button class="theme-toggle-btn" aria-label="Toggle Dark/Light theme">
+                    🌙 <span>Dark</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Responsive Navigation Bar (Mobile Hamburger Drawer + Desktop Flex Row) -->
+    <nav>
+        <div class="container nav-container">
+            <div class="nav-brand-label">
+                <span>Navigation Menu</span>
+            </div>
+            <button class="nav-toggle-btn" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li class="nav-dropdown">
+                        <button class="nav-dropdown-btn">Student Portal ▾</button>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="profile.html">Student Profile</a></li>
+                            <li><a href="attendance.html">Attendance</a></li>
+                            <li><a href="academics.html">Academics & Grades</a></li>
+                            <li><a href="timetable.html">Class Timetable</a></li>
+                            <li><a href="assignments.html">Assignments</a></li>
+                            <li><a href="fees.html">Fee Payment</a></li>
+                            <li><a href="library.html">Digital Library</a></li>
+                            <li><a href="placements.html">Placements</a></li>
+                            <li><a href="settings.html">Account Settings</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Pure Flexbox & Dynamic Grid Counters) -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Excellence in Engineering, Innovation & Research</h1>
+            <p>Empowering ambitious minds with industry-driven computer engineering education, state-of-the-art research laboratories, and global placement partnerships.</p>
+            <div class="hero-actions">
+                <a href="dashboard.html" class="btn btn-accent btn-lg">Student Dashboard</a>
+                <a href="login.html" class="btn btn-primary btn-lg">Student / Staff Login</a>
+                <a href="events.html" class="btn btn-outline-light btn-lg">Campus Events</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat-item">
+                    <h3>12,500+</h3>
+                    <p>Enrolled Students</p>
+                </div>
+                <div class="hero-stat-item">
+                    <h3>94.8%</h3>
+                    <p>Placement Record</p>
+                </div>
+                <div class="hero-stat-item">
+                    <h3>45+</h3>
+                    <p>Advanced Laboratories</p>
+                </div>
+                <div class="hero-stat-item">
+                    <h3>₹42 LPA</h3>
+                    <p>Highest Package</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Container -->
+    <main class="container">
+
+        <!-- Practical 4: Interactive Image & Content Slider (Carousel) -->
+        <section class="slider-container" aria-label="Campus Highlights Carousel">
+            <div class="slider-wrapper">
+                <!-- Slide 1 -->
+                <div class="slide active">
+                    <span class="slide-tag">Featured Event</span>
+                    <h2 class="slide-title">CodeFest 2026: 24-Hour National Hackathon</h2>
+                    <p class="slide-desc">Join over 50 shortlisted engineering teams competing in Generative AI, Web3, and Cyber Defense. Prizes worth ₹2,50,000 with industry mentors from Google and NVIDIA.</p>
+                    <a href="events.html" class="btn btn-accent btn-sm">Register Team Now &raquo;</a>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <span class="slide-tag">Advanced Research</span>
+                    <h2 class="slide-title">High Performance GPU & AI Research Center</h2>
+                    <p class="slide-desc">Our newly upgraded Computing Lab 2 features 4x NVIDIA A100 GPU clusters, dedicated gigabit optical networks, and 24x7 sandbox access for students working on machine learning projects.</p>
+                    <a href="about.html#labs" class="btn btn-primary btn-sm">Explore Lab Facilities &raquo;</a>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <span class="slide-tag">Placement Drive</span>
+                    <h2 class="slide-title">Campus Placements 2026: 150+ Top Recruiters</h2>
+                    <p class="slide-desc">Record placements with highest CTC of ₹42 LPA and average package of ₹8.4 LPA. Microsoft, Infosys, Cognizant, and Accenture recruitment drives scheduled this semester.</p>
+                    <a href="placements.html" class="btn btn-success btn-sm">View Placement Stats &raquo;</a>
+                </div>
+            </div>
+
+            <!-- Previous / Next Controls -->
+            <button class="slider-btn slider-btn-prev" aria-label="Previous Slide">&#10094;</button>
+            <button class="slider-btn slider-btn-next" aria-label="Next Slide">&#10095;</button>
+
+            <!-- Dot Indicators -->
+            <div class="slider-dots">
+                <span class="dot active" aria-label="Slide 1"></span>
+                <span class="dot" aria-label="Slide 2"></span>
+                <span class="dot" aria-label="Slide 3"></span>
+            </div>
+        </section>
+
+        <!-- University Highlights (CSS Grid 3-Column) -->
+        <section style="margin-bottom: var(--space-xl);">
+            <div class="card-header">
+                <h2>Why Choose The Backbenchers University?</h2>
+                <a href="about.html" class="btn btn-outline btn-sm">Know More &rarr;</a>
+            </div>
+            <div class="features-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>💻 Industry 4.0 Curriculum</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Our syllabus is continually updated with emerging technologies: Artificial Intelligence, Cloud Microservices, Full-Stack Development, and Quantum Computing.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="badge badge-info">AICTE Approved</span>
+                        <a href="academics.html">View Syllabus &raquo;</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3>🔬 Modern Research Labs</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Over 45 specialized research hubs equipped with high-performance GPUs, IoT sensor arrays, robotics fabrication benches, and Cisco networking suites.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="badge badge-success">24x7 Lab Access</span>
+                        <a href="about.html#labs">Explore Labs &raquo;</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3>🚀 Career & Placements</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Dedicated training & placement cell connected with top Fortune 500 tech leaders, organizing weekly coding bootcamps, mock interviews, and hackathons.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="badge badge-warning">150+ Recruiters</span>
+                        <a href="placements.html">Placement Stats &raquo;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2-Column Responsive Section: Circulars & Quick Actions (Pure CSS Grid) -->
+        <section class="grid-2" style="margin-bottom: var(--space-xl);">
+            <!-- Academic Notices -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>📢 Latest Notices & Circulars</h2>
+                    <span class="badge badge-danger">Live Updates</span>
+                </div>
+                <div class="card-body">
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-sm);">
+                        <li style="border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">
+                            <span class="badge badge-info" style="margin-right: 6px;">05 Aug</span>
+                            <b>DBMS Practical Submission:</b> Extended to 10th August on portal.
+                        </li>
+                        <li style="border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">
+                            <span class="badge badge-warning" style="margin-right: 6px;">01 Aug</span>
+                            <b>Mid-Semester Examinations:</b> Schedule for SY Computer Engineering released.
+                        </li>
+                        <li style="border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">
+                            <span class="badge badge-success" style="margin-right: 6px;">28 Jul</span>
+                            <b>Annual Sports Meet 2026:</b> Inter-departmental registrations now live.
+                        </li>
+                        <li>
+                            <span class="badge badge-info" style="margin-right: 6px;">20 Jul</span>
+                            <b>Guest Lecture:</b> Microservices Architecture by Industry Architect this Friday.
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <a href="dashboard.html" class="btn btn-primary btn-sm">Open Student Noticeboard</a>
+                </div>
+            </div>
+
+            <!-- Quick Portal Actions -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>⚡ Quick Student Actions</h2>
+                    <span class="badge badge-info">Direct Access</span>
+                </div>
+                <div class="card-body" style="display: flex; flex-direction: column; gap: var(--space-sm);">
+                    <p>Logged in as: <b>Rahul Sharma (SYCS104)</b></p>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-sm);">
+                        <a href="attendance.html" class="btn btn-outline" style="text-align: left; padding: 12px;">📊 Check Attendance (84%)</a>
+                        <a href="assignments.html" class="btn btn-outline" style="text-align: left; padding: 12px;">📝 Submit Assignments</a>
+                        <a href="fees.html" class="btn btn-outline" style="text-align: left; padding: 12px;">💳 Pay Semester Fees</a>
+                        <a href="timetable.html" class="btn btn-outline" style="text-align: left; padding: 12px;">📅 View Timetable</a>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="dashboard.html" class="btn btn-accent btn-sm">Go to Full Dashboard &raquo;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practical 6: Dynamic FAQ Knowledge Base (Rendered from faqs.json) -->
+        <section class="card" id="faq-section" style="margin-bottom: var(--space-xl);">
+            <div class="card-header">
+                <h2>❓ Frequently Asked Student Questions (FAQ)</h2>
+                <span class="badge badge-info">Practical 6 – Fetch API (faqs.json)</span>
+            </div>
+
+            <!-- Toolbar: Search, Filter, Reset -->
+            <div class="events-toolbar-row" style="margin-bottom: var(--space-md); padding-bottom: var(--space-md); border-bottom: 1px solid var(--border-color);">
+                <!-- Search Box -->
+                <div class="toolbar-search-col">
+                    <label for="faq-search-input" style="font-size: var(--font-xs); font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 4px;">🔍 Search Knowledge Base</label>
+                    <input type="text" id="faq-search-input" class="form-control" placeholder="Search FAQs by question, answer, or keywords...">
+                </div>
+
+                <!-- Category Filter -->
+                <div class="toolbar-filter-col">
+                    <label for="faq-category-filter" style="font-size: var(--font-xs); font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 4px;">📂 Topic Category</label>
+                    <select id="faq-category-filter" class="form-control">
+                        <option value="all" selected>All Categories (16)</option>
+                        <option value="academics">Academics</option>
+                        <option value="examinations">Examinations</option>
+                        <option value="fees">Fees & Scholarships</option>
+                        <option value="hostel">Hostel & Facilities</option>
+                        <option value="admissions">Admissions</option>
+                    </select>
+                </div>
+
+                <!-- Reset Button -->
+                <div class="toolbar-action-col" style="align-self: flex-end;">
+                    <button type="button" id="faq-reset-btn" class="btn btn-outline" style="height: 38px;">Reset</button>
+                </div>
+            </div>
+
+            <!-- Stats Count & Status -->
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-sm); font-size: var(--font-xs); color: var(--text-muted);">
+                <span id="faq-count-info">Loading FAQs...</span>
+                <span>Click any question below to expand the verified answer</span>
+            </div>
+
+            <!-- Loading State -->
+            <div id="faq-loading" class="events-status-message" style="padding: var(--space-xl);">
+                <div style="font-size: 1.8rem; margin-bottom: 6px;">⏳</div>
+                <h4>Loading Student FAQs...</h4>
+                <p style="color: var(--text-muted); font-size: var(--font-xs); margin: 0;">Fetching records asynchronously from <code>faqs.json</code>.</p>
+            </div>
+
+            <!-- Error State -->
+            <div id="faq-error" class="events-error-box" style="display: none;">
+                <h4>⚠️ Failed to load faqs.json</h4>
+                <p style="margin: 0; font-size: var(--font-xs);">Make sure a local web server is running and <code>faqs.json</code> is accessible.</p>
+            </div>
+
+            <!-- No Records Found State -->
+            <div id="faq-not-found" class="events-status-message" style="display: none; padding: var(--space-xl);">
+                <div style="font-size: 1.8rem; margin-bottom: 6px;">🔍</div>
+                <h4>No Matching FAQs Found</h4>
+                <p style="color: var(--text-muted); font-size: var(--font-xs); margin: 0;">Try searching for a different keyword or choosing "All Categories".</p>
+            </div>
+
+            <!-- Dynamic Accordion Container -->
+            <div class="faq-accordion" id="faq-accordion-container" style="display: none;"></div>
+        </section>
+
+        <!-- Campus Facilities (CSS Grid 4-Column on Desktop) -->
+        <section style="margin-bottom: var(--space-xl);">
+            <div class="card-header">
+                <h2>🏛️ Campus Infrastructure</h2>
+                <span class="badge badge-success">World-Class</span>
+            </div>
+            <div class="grid-4">
+                <div class="card" style="text-align: center;">
+                    <div class="metric-icon" style="margin: 0 auto var(--space-sm) auto; width: 60px; height: 60px;">
+                        <img src="images/library.svg" alt="Library">
+                    </div>
+                    <h3 style="font-size: var(--font-base); margin-bottom: 4px;">Digital Central Library</h3>
+                    <p style="font-size: var(--font-xs); color: var(--text-muted);">Over 85,000 reference volumes, IEEE e-journals access, and 500-seat silent reading room.</p>
+                </div>
+
+                <div class="card" style="text-align: center;">
+                    <div class="metric-icon" style="margin: 0 auto var(--space-sm) auto; width: 60px; height: 60px;">
+                        <img src="images/assignment.svg" alt="Compute">
+                    </div>
+                    <h3 style="font-size: var(--font-base); margin-bottom: 4px;">Computing Center</h3>
+                    <p style="font-size: var(--font-xs); color: var(--text-muted);">Dual Gigabit optical fiber backbone with 800+ workstations and cloud server racks.</p>
+                </div>
+
+                <div class="card" style="text-align: center;">
+                    <div class="metric-icon" style="margin: 0 auto var(--space-sm) auto; width: 60px; height: 60px;">
+                        <img src="images/placement.svg" alt="Incubation">
+                    </div>
+                    <h3 style="font-size: var(--font-base); margin-bottom: 4px;">Startup Incubation Hub</h3>
+                    <p style="font-size: var(--font-xs); color: var(--text-muted);">Seed funding, patent assistance, and mentoring by university alumni and angel investors.</p>
+                </div>
+
+                <div class="card" style="text-align: center;">
+                    <div class="metric-icon" style="margin: 0 auto var(--space-sm) auto; width: 60px; height: 60px;">
+                        <img src="images/profile.svg" alt="Sports">
+                    </div>
+                    <h3 style="font-size: var(--font-base); margin-bottom: 4px;">Sports & Gymnasium</h3>
+                    <p style="font-size: var(--font-xs); color: var(--text-muted);">Olympic-sized indoor basketball court, badminton arena, gym, and cricket grounds.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- University Footer (Responsive Multi-Column Grid) -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4>The Backbenchers University</h4>
+                <p>An autonomous premier technical institute dedicated to engineering excellence, cutting-edge innovation, and holistic student development.</p>
+                <p style="margin-top: var(--space-xs); font-size: var(--font-xs); color: var(--accent-light);">NAAC 'A++' Grade | Approved by AICTE, New Delhi</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Institution</a></li>
+                    <li><a href="login.html">Student / Staff Login</a></li>
+                    <li><a href="registration.html">Student Registration</a></li>
+                    <li><a href="events.html">Campus Events</a></li>
+                    <li><a href="placements.html">Placement Records</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Student Portal</h4>
+                <ul class="footer-links">
+                    <li><a href="dashboard.html">Student Dashboard</a></li>
+                    <li><a href="attendance.html">Attendance Tracker</a></li>
+                    <li><a href="academics.html">Academic Records</a></li>
+                    <li><a href="fees.html">Fee Portal</a></li>
+                    <li><a href="contact.html">Support & Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Campus Address</h4>
+                <p>Knowledge City, Tech Valley Campus<br>Pune - 411048, Maharashtra, India</p>
+                <p style="margin-top: 6px;"><b>Email:</b> info@backbenchers.edu.in<br><b>Helpline:</b> +91 20 2765 4321</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 The Backbenchers University. Designed for Practical 3 & 4 (DOM Manipulation & UI Interactivity).</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
