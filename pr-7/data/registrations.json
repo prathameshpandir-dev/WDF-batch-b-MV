@@ -1,0 +1,96 @@
+[
+    {
+        "id": 1,
+        "fullname": "Aarav Patel",
+        "email": "aarav.patel@backbenchers.edu.in",
+        "phone": "9876543210",
+        "prn": "SYIT101",
+        "course": "B.Tech Information Technology",
+        "year": "Second Year (SE)",
+        "gender": "Male",
+        "role": "student",
+        "registered_at": "2026-10-01 10:30:00"
+    },
+    {
+        "id": 2,
+        "fullname": "Neha Kulkarni",
+        "email": "neha.kulkarni@backbenchers.edu.in",
+        "phone": "9823456789",
+        "prn": "SYCS102",
+        "course": "B.Tech Computer Engineering",
+        "year": "Second Year (SE)",
+        "gender": "Female",
+        "role": "student",
+        "registered_at": "2026-10-02 11:15:00"
+    },
+    {
+        "id": 3,
+        "fullname": "Rohan Deshmukh",
+        "email": "rohan.deshmukh@backbenchers.edu.in",
+        "phone": "9765432109",
+        "prn": "SYAI103",
+        "course": "B.Tech AI & Data Science",
+        "year": "Second Year (SE)",
+        "gender": "Male",
+        "role": "student",
+        "registered_at": "2026-10-03 14:45:00"
+    },
+    {
+        "id": 4,
+        "name": "Rohit Deshmukh",
+        "fullname": "Rohit Deshmukh",
+        "email": "rohit.1791366816@backbenchers.edu",
+        "mobile": "9876543210",
+        "phone": "9876543210",
+        "prn": "TEST66816",
+        "course": "B.Tech Information Technology",
+        "year": "Second Year (SE)",
+        "gender": "Male",
+        "role": "student",
+        "registered_at": "2026-10-07 11:53:37"
+    },
+    {
+        "id": 4,
+        "name": "Aniket Shinde",
+        "fullname": "Aniket Shinde",
+        "email": "student_1791899928@testcollege.edu",
+        "mobile": "9876543210",
+        "course": "B.Tech Information Technology",
+        "year": "Second Year (SE)",
+        "gender": "Male",
+        "registered_at": "2026-10-13 15:58:49"
+    },
+    {
+        "id": 5,
+        "name": "Aniket Shinde",
+        "fullname": "Aniket Shinde",
+        "email": "student_1791899963@testcollege.edu",
+        "mobile": "9876543210",
+        "course": "B.Tech Information Technology",
+        "year": "Second Year (SE)",
+        "gender": "Male",
+        "registered_at": "2026-10-13 15:59:24"
+    },
+    {
+        "id": 10,
+        "name": "Prathamesh Pandit",
+        "fullname": "Prathamesh Pandit",
+        "email": "admin@garuda.ai",
+        "mobile": "9635635225",
+        "course": "B.Tech Computer Engineering",
+        "year": "Second Year (SE)",
+        "gender": "Female",
+        "registered_at": "2026-10-13 16:56:14"
+    },
+    {
+        "id": 11,
+        "name": "Jay shah",
+        "fullname": "Jay shah",
+        "email": "ceo@garudaai.com",
+        "mobile": "9635635225",
+        "course": "B.Tech Information Technology",
+        "year": "Second Year (SE)",
+        "gender": "Male",
+        "registered_at": "2026-10-13 17:11:40"
+    }
+]
