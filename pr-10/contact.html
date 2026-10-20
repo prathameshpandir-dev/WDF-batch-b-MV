@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - The Backbenchers University</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container header-inner">
+            <a href="index.html" class="header-brand">
+                <img src="images/logo.svg" alt="University Logo" class="header-logo">
+                <div class="header-title">
+                    <h1>THE BACKBENCHERS UNIVERSITY</h1>
+                    <p>Accredited NAAC A++ | Autonomous Engineering Institute</p>
+                </div>
+            </a>
+            <div class="header-quick-info">
+                <span class="badge-tag">Academic Year 2025-26</span>
+                <span class="badge-tag">Helpline: +91 20 2765 4321</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container nav-container">
+            <div class="nav-brand-label">
+                <span>Navigation Menu</span>
+            </div>
+            <button class="nav-toggle-btn" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li class="nav-dropdown">
+                        <button class="nav-dropdown-btn">Student Portal ▾</button>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="profile.html">Student Profile</a></li>
+                            <li><a href="attendance.html">Attendance</a></li>
+                            <li><a href="academics.html">Academics & Grades</a></li>
+                            <li><a href="timetable.html">Class Timetable</a></li>
+                            <li><a href="assignments.html">Assignments</a></li>
+                            <li><a href="fees.html">Fee Payment</a></li>
+                            <li><a href="library.html">Digital Library</a></li>
+                            <li><a href="placements.html">Placements</a></li>
+                            <li><a href="settings.html">Account Settings</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <main class="container" style="margin-top: var(--space-lg); margin-bottom: var(--space-xl);">
+
+        <!-- Page Introduction Card -->
+        <div class="card">
+            <div class="card-header">
+                <h2>📞 Contact University Helpdesk & Administrative Offices</h2>
+                <span class="badge badge-info">Support Available 9AM - 5PM</span>
+            </div>
+            <div class="card-body">
+                <p>Have an inquiry regarding admissions, examination schedules, fee payments, or campus facilities? Reach out to the respective administrative department or drop an online message below.</p>
+            </div>
+        </div>
+
+        <!-- 2-Column Responsive Layout (Contact Info + Inquiry Form) -->
+        <div class="grid-2">
+
+            <!-- Department Directory & Helpline Cards -->
+            <div class="d-flex flex-col gap-md">
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3>🏢 Departmental Directory</h3>
+                    </div>
+                    <div class="d-flex flex-col gap-sm" style="font-size: var(--font-sm);">
+                        <div style="padding-bottom: 8px; border-bottom: 1px solid var(--border-color);">
+                            <b style="color: var(--primary);">Admissions & Counseling Office:</b><br>
+                            <span style="color: var(--text-muted);">Phone: +91 20 2765 4321 | Ext: 101</span><br>
+                            <span style="color: var(--text-muted);">Email: admissions@backbenchers.edu.in</span>
+                        </div>
+                        <div style="padding-bottom: 8px; border-bottom: 1px solid var(--border-color);">
+                            <b style="color: var(--primary);">Autonomous Examination Cell:</b><br>
+                            <span style="color: var(--text-muted);">Phone: +91 20 2765 4322 | Ext: 104</span><br>
+                            <span style="color: var(--text-muted);">Email: coe@backbenchers.edu.in</span>
+                        </div>
+                        <div style="padding-bottom: 8px; border-bottom: 1px solid var(--border-color);">
+                            <b style="color: var(--primary);">Accounts & Fee Section:</b><br>
+                            <span style="color: var(--text-muted);">Phone: +91 20 2765 4323 | Ext: 108</span><br>
+                            <span style="color: var(--text-muted);">Email: accounts@backbenchers.edu.in</span>
+                        </div>
+                        <div>
+                            <b style="color: var(--primary);">Hostel Warden & Student Welfare:</b><br>
+                            <span style="color: var(--text-muted);">Phone: +91 20 2765 4325 | Ext: 112</span><br>
+                            <span style="color: var(--text-muted);">Email: hostel@backbenchers.edu.in</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style="background-color: var(--bg-alt);">
+                    <div class="card-header">
+                        <h3>📍 Campus Location</h3>
+                    </div>
+                    <p style="font-size: var(--font-sm); margin-bottom: 8px;">
+                        <b>The Backbenchers University</b><br>
+                        Tech Valley Campus, Knowledge City,<br>
+                        Pune - 411048, Maharashtra, India.
+                    </p>
+                    <p style="font-size: var(--font-xs); color: var(--text-muted);">
+                        <b>Nearest Transit:</b> Pune Metro Station (2.5 km) | Pune International Airport (18 km)
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Online Inquiry Form -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>✉️ Send an Online Inquiry</h3>
+                </div>
+                <form id="contact-inquiry-form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="contact-name">Your Full Name <span class="required" style="color: var(--danger);">*</span></label>
+                        <input type="text" id="contact-name" class="form-control" placeholder="e.g. Rahul Sharma" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-email">Email Address <span class="required" style="color: var(--danger);">*</span></label>
+                        <input type="email" id="contact-email" class="form-control" placeholder="e.g. rahul@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-dept">Department to Inquire <span class="required" style="color: var(--danger);">*</span></label>
+                        <select id="contact-dept" class="form-control" required>
+                            <option value="Admissions">Admissions & Eligibility</option>
+                            <option value="Examinations">Exam Cell & Transcripts</option>
+                            <option value="Accounts">Fee Payment & Scholarships</option>
+                            <option value="Hostel">Hostel & Accommodation</option>
+                            <option value="IT Support">Student Portal Technical Support</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-subject">Inquiry Subject <span class="required" style="color: var(--danger);">*</span></label>
+                        <input type="text" id="contact-subject" class="form-control" placeholder="Brief subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-message">Detailed Message <span class="required" style="color: var(--danger);">*</span></label>
+                        <textarea id="contact-message" class="form-control" rows="4" placeholder="Type your inquiry details here..." required></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-accent btn-block">Send Inquiry Message</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- University Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4>The Backbenchers University</h4>
+                <p>An autonomous premier technical institute dedicated to engineering excellence, cutting-edge innovation, and holistic student development.</p>
+                <p style="margin-top: var(--space-xs); font-size: var(--font-xs); color: var(--accent-light);">NAAC 'A++' Grade | Approved by AICTE, New Delhi</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Institution</a></li>
+                    <li><a href="login.html">Student / Staff Login</a></li>
+                    <li><a href="events.html">Campus Events</a></li>
+                    <li><a href="placements.html">Placement Records</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Student Portal</h4>
+                <ul class="footer-links">
+                    <li><a href="dashboard.html">Student Dashboard</a></li>
+                    <li><a href="attendance.html">Attendance Tracker</a></li>
+                    <li><a href="academics.html">Academic Records</a></li>
+                    <li><a href="fees.html">Fee Portal</a></li>
+                    <li><a href="contact.html">Support & Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Campus Address</h4>
+                <p>Knowledge City, Tech Valley Campus<br>Pune - 411048, Maharashtra, India</p>
+                <p style="margin-top: 6px;"><b>Email:</b> info@backbenchers.edu.in<br><b>Helpline:</b> +91 20 2765 4321</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 The Backbenchers University. Designed for Practical 3 - Responsive UI Design (Pure CSS Grid & Flexbox).</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

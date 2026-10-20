@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "category": "examinations",
+    "categoryLabel": "Examinations",
+    "question": "What is the minimum attendance criteria required to appear for In-Sem and End-Sem exams?",
+    "answer": "As per university autonomous academic regulations, students must maintain a minimum of 75% overall attendance across theory and laboratory sessions to be eligible to appear for the semester examinations. Students between 65% and 74% with certified medical reasons may apply for a condonation review with the Dean of Academics.",
+    "keywords": "attendance, exam eligibility, 75%, insem, endsem, condonation"
+  },
+  {
+    "id": 2,
+    "category": "academics",
+    "categoryLabel": "Academics",
+    "question": "How is the Cumulative Grade Point Average (CGPA) calculated in the autonomous curriculum?",
+    "answer": "CGPA is calculated on a 10.0 scale using credit-weighted grade points earned across all completed semesters. The formula is: CGPA = Total Grade Points Earned divided by Total Credits Attempted. A CGPA of 7.75 and above corresponds to First Class with Distinction.",
+    "keywords": "cgpa, sgpa, grading system, credits, calculation, formula, distinction"
+  },
+  {
+    "id": 3,
+    "category": "fees",
+    "categoryLabel": "Fees & Scholarships",
+    "question": "How do I pay semester tuition and hostel fees online, and where can I download the receipt?",
+    "answer": "Students can navigate to the 'Fee Payment' portal under Student Portal menu. Pending balances can be paid using UPI, Net Banking, or Debit/Credit card. Upon successful transaction, an official digitally signed e-Receipt with TXN ID is immediately generated and saved to your payment history.",
+    "keywords": "fee payment, tuition fee, hostel fee, online receipt, upi, transaction"
+  },
+  {
+    "id": 4,
+    "category": "examinations",
+    "categoryLabel": "Examinations",
+    "question": "What is the procedure for applying for re-evaluation or photocopy of exam answer scripts?",
+    "answer": "Within 7 business days after semester results declaration, an online application window opens under the Examination section. Students must pay a verification fee of ₹300 per subject. Evaluated photocopies are mailed to the institutional student email, after which formal revaluation can be initiated.",
+    "keywords": "revaluation, photocopy, paper recheck, exam marks, verification fee"
+  },
+  {
+    "id": 5,
+    "category": "admissions",
+    "categoryLabel": "Admissions",
+    "question": "How can direct second-year (DSE) diploma students register on the portal?",
+    "answer": "Direct second year admitted diploma students receive an official provisional PRN upon document verification at the central admissions cell. Go to the Student Registration page (registration.html), select your branch and 'Second Year (SE)', and enter your allotted PRN to activate your portal login.",
+    "keywords": "dse, diploma admission, direct second year, registration, prn allotment"
+  },
+  {
+    "id": 6,
+    "category": "hostel",
+    "categoryLabel": "Hostel & Facilities",
+    "question": "What are the campus library timings and book borrowing limits?",
+    "answer": "The central digital library is open Monday through Saturday from 08:00 AM to 08:00 PM. During exam weeks, the silent reading hall remains open 24/7. Undergraduate students can borrow up to 3 books simultaneously for a duration of 14 days, renewable once via the portal.",
+    "keywords": "library hours, book renewal, book issue limit, reading hall, digital library"
+  },
+  {
+    "id": 7,
+    "category": "hostel",
+    "categoryLabel": "Hostel & Facilities",
+    "question": "What is the campus Wi-Fi SSID and how do students get authentic login credentials?",
+    "answer": "Connect to the 'BBU-Campus-Secure' Wi-Fi network. Open any web browser to be redirected to the university captive portal. Log in using your registered Roll Number and portal password. Each student is allocated 50 GB high-speed monthly data allowance.",
+    "keywords": "wifi login, internet access, captive portal, bbu-campus-secure, data limit"
+  },
+  {
+    "id": 8,
+    "category": "fees",
+    "categoryLabel": "Fees & Scholarships",
+    "question": "Which government and merit scholarships can students apply for on campus?",
+    "answer": "Eligible students can apply for the MahaDBT Post-Matric Scholarship (EBC/SC/ST/OBC), AICTE Pragati Scholarship for girls, and the University Chancellor Merit Scholarship (awarded to top 3 CGPA holders in every department annually with 50% tuition waiver).",
+    "keywords": "mahadbt, scholarship, fee concession, ebc, aicte pragati, merit scholarship"
+  },
+  {
+    "id": 9,
+    "category": "academics",
+    "categoryLabel": "Academics",
+    "question": "What is the university policy for elective subject selection and change?",
+    "answer": "Open and professional elective selection forms are made available on the student portal during the first two weeks of each semester. Elective track changes are permitted within the first 10 days of the term, subject to seat availability in the requested laboratory or classroom.",
+    "keywords": "electives, course selection, open elective, subject change, credits"
+  },
+  {
+    "id": 10,
+    "category": "hostel",
+    "categoryLabel": "Hostel & Facilities",
+    "question": "What are the hostel in-time rules and night out pass application procedures?",
+    "answer": "Campus hostel curfew in-time is 09:30 PM for all residents. To stay out overnight or travel home, students must submit a digital Night Out Pass on the portal at least 12 hours in advance, which is approved digitally by the parent via SMS OTP and the hostel warden.",
+    "keywords": "hostel curfew, in-time, night out pass, hostel warden, hostel rules"
+  },
+  {
+    "id": 11,
+    "category": "academics",
+    "categoryLabel": "Academics",
+    "question": "How are assignments and laboratory practical journals submitted and graded?",
+    "answer": "All code solutions and laboratory assignment PDFs must be submitted through the portal's 'Assignments' page before the midnight deadline. Late submissions incur a 10% penalty per day. Faculty grade submissions out of 25 marks under continuous internal evaluation.",
+    "keywords": "assignment upload, lab journal, submission deadline, continuous evaluation"
+  },
+  {
+    "id": 12,
+    "category": "admissions",
+    "categoryLabel": "Admissions",
+    "question": "How can I update my registered mobile number or correspondence address?",
+    "answer": "Log into the portal, click your profile avatar, and select 'Account Settings'. Submit an update request along with proof of identity. The academic cell verifies and approves contact detail updates within 2 working days.",
+    "keywords": "profile update, change mobile, change address, account settings"
+  },
+  {
+    "id": 13,
+    "category": "examinations",
+    "categoryLabel": "Examinations",
+    "question": "What happens if a student has an ATKT (Allowed To Keep Term) backlog in semester exams?",
+    "answer": "Students are permitted to carry up to 4 backlogs to the next academic year under the autonomous ATKT rules. Remedial backlog examinations are conducted in the winter and summer inter-semester breaks to allow students to clear failed courses without losing a term.",
+    "keywords": "atkt, backlog exam, remedial exam, carry forward, fail rules"
+  },
+  {
+    "id": 14,
+    "category": "hostel",
+    "categoryLabel": "Hostel & Facilities",
+    "question": "What medical and counseling facilities are available on campus?",
+    "answer": "The university operates a 24/7 health center located adjacent to the Sports Complex with a full-time resident medical officer, free basic prescriptions, and an ambulance. Confidential student mental wellness counseling is available by booking via the portal.",
+    "keywords": "health center, doctor, medical emergency, counseling, wellness"
+  },
+  {
+    "id": 15,
+    "category": "academics",
+    "categoryLabel": "Academics",
+    "question": "What is the procedure for obtaining an official bonafide certificate or transcript?",
+    "answer": "Apply through the portal under Student Services. Bonafide certificates for bus passes, bank loans, or passport applications are digitally signed and available for download within 24 hours of application free of charge.",
+    "keywords": "bonafide certificate, transcript, recommendation letter, bank loan proof"
+  },
+  {
+    "id": 16,
+    "category": "fees",
+    "categoryLabel": "Fees & Scholarships",
+    "question": "Can semester college fees be paid in installment plans?",
+    "answer": "Yes. Students facing financial hardship can submit an installment request addressed to the Registrar and Finance Officer on the Fee Payment page before the term commencement. Approved requests split fees into two equal 50% installments with zero penalty.",
+    "keywords": "fee installment, payment plan, financial aid, registrar, concession"
+  }
+]

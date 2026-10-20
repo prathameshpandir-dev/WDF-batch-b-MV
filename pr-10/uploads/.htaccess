@@ -1,0 +1,7 @@
+# Block execution of any uploaded scripts in uploads directory
+<FilesMatch "\.(php|phtml|php3|php4|php5|php7|phps|phar|cgi|pl|py|sh|asp|aspx|js)$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+Options -ExecCGI -Indexes
+php_flag engine off
